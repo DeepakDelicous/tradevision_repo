@@ -1338,24 +1338,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator30;
 
         /// <summary>
-        /// ClaimantCRUEI control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ClaimantCRUEI;
-
-        /// <summary>
-        /// RegularExpressionValidator27 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator27;
-
-        /// <summary>
         /// ClaimantName1 control.
         /// </summary>
         /// <remarks>
@@ -1390,6 +1372,24 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator28;
+
+        /// <summary>
+        /// ClaimantCRUEI control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ClaimantCRUEI;
+
+        /// <summary>
+        /// RegularExpressionValidator27 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator27;
 
         /// <summary>
         /// popupclaimant control.
@@ -1455,24 +1455,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.Button btnnocl;
 
         /// <summary>
-        /// ClaimantName1C control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ClaimantName1C;
-
-        /// <summary>
-        /// RegularExpressionValidator73 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator73;
-
-        /// <summary>
         /// ClaimantNameC control.
         /// </summary>
         /// <remarks>
@@ -1489,6 +1471,24 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator5;
+
+        /// <summary>
+        /// ClaimantName1C control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ClaimantName1C;
+
+        /// <summary>
+        /// RegularExpressionValidator73 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator73;
 
         /// <summary>
         /// ValidationSummary6 control.
@@ -3370,6 +3370,15 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton btnhscode1;
+
+        /// <summary>
+        /// ITEM_CASC_HSCODES control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ITEM_CASC_HSCODES;
 
         /// <summary>
         /// lblhserror control.

@@ -3419,6 +3419,7 @@
                                                                         <div class="flex-1">
                                                                             <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtInHouseItem" AutoPostBack="true" runat="server" TabIndex="106" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator43" runat="server" ControlToValidate="TxtInHouseItem" ErrorMessage="Please Enter InHouse" Display="Dynamic" ValidationGroup="ItemMasterValidation5" ForeColor="Red"></asp:RequiredFieldValidator>
+                                                                             <asp:Label ID="ITEM_CASC_HSCODES" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                             <asp:Label ID="lblhserror" Visible="false" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                             <asp:Label ID="lbldhserror" Visible="false" ForeColor="Red" BackColor="#ffff00" runat="server"></asp:Label>
                                                                         </div>

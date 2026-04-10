@@ -2970,6 +2970,8 @@ namespace RET
                         percode = objd.dr["ResonForCancel"].ToString().Split(':');
                     }
                 }
+
+
                 XElement canreason = new XElement(ns2 + "CancellationReasonCode", percode[0].ToString().Substring(0, percode[0].Length - 1).ToUpper());
                 XElement DeclarationIndicator = new XElement(ns2 + "DeclarationIndicator", dt.Rows[0]["DeclareIndicator"].ToString().ToLower());
                 XElement CommonAccessReference = new XElement(ns2 + "CommonAccessReference", "TNPUPD");

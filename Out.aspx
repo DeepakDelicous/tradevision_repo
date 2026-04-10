@@ -5233,6 +5233,8 @@
                                                                         <div class="relative flex-1">
                                                                             <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="TxtInHouseItem" OnTextChanged="TxtInHouseItem_TextChanged" placeholder="" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender ServiceMethod="GetInhouse" MinimumPrefixLength="1" CompletionInterval="100" CompletionListCssClass="ac_results" EnableCaching="false" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="itemHighlighted" CompletionSetCount="10" TargetControlID="TxtInHouseItem" ID="AutoCompleteExtender11" runat="server" FirstRowSelected="true"></cc1:AutoCompleteExtender>
+                                                                             <asp:Label ID="ITEM_CASC_HSCODES" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
+
                                                                             <asp:Label ID="lblhserror" Visible="false" ForeColor="White" Font-Bold="true" BackColor="Brown" runat="server"></asp:Label>
                                                                             <asp:Label ID="lbldhserror" Visible="false" ForeColor="White" Font-Bold="true" BackColor="Brown" runat="server"></asp:Label>
                                                                         </div>

@@ -2550,17 +2550,7 @@
 
                                                                     </div>
                                                                 </div>
-                                                                <div class="md:max-w-[250px] w-full">
-                                                                    <label class="text-gray-500 text-sm font-medium">CR UEI</label>
-                                                                    <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantCRUEI" placeholder="" runat="server" TabIndex="25" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
-
-                                                                        <asp:RequiredFieldValidator BackColor="Red" ID="RequiredFieldValidator101" runat="server" ControlToValidate="ClaimantCRUEI" Display="None" ErrorMessage="Party --> CLAIMANT PARTY CRUEI" ValidationGroup="CLAIMANT"></asp:RequiredFieldValidator>
-                                                                        <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ClaimantCRUEI" ID="RegularExpressionValidator65" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="CLAIMANT"></asp:RegularExpressionValidator>
-
-
-                                                                    </div>
-                                                                </div>
+                                                               
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Name 1 </label>
                                                                     <div class="relative mt-1">
@@ -2573,6 +2563,17 @@
                                                                         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantName2" placeholder="Claimant Name" ValidationGroup="CLAIMANT" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                     </div>
                                                                 </div>
+                                                                 <div class="md:max-w-[250px] w-full">
+     <label class="text-gray-500 text-sm font-medium">CR UEI</label>
+     <div class="relative mt-1">
+         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantCRUEI" placeholder="" runat="server" TabIndex="25" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+
+         <asp:RequiredFieldValidator BackColor="Red" ID="RequiredFieldValidator101" runat="server" ControlToValidate="ClaimantCRUEI" Display="None" ErrorMessage="Party --> CLAIMANT PARTY CRUEI" ValidationGroup="CLAIMANT"></asp:RequiredFieldValidator>
+         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ClaimantCRUEI" ID="RegularExpressionValidator65" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="CLAIMANT"></asp:RegularExpressionValidator>
+
+
+     </div>
+ </div>
 
                                                             </div>
 
@@ -2584,7 +2585,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="md:max-w-[250px] w-full">
-                                                                    <label class="text-gray-500 text-sm font-medium">Claimant Name</label>
+                                                                    <label class="text-gray-500 text-sm font-medium">Claimant ID</label>
                                                                     <div class="relative mt-1">
                                                                         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantName1C" placeholder="Claimant ID" ValidationGroup="CLAIMANT" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                     </div>
@@ -5200,6 +5201,10 @@
                                                                                     CompletionListItemCssClass="listItem"
                                                                                     CompletionListHighlightedItemCssClass="itemHighlighted"
                                                                                     TargetControlID="TxtInHouseItem" />
+
+
+                                                                                 <asp:Label ID="ITEM_CASC_HSCODES" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
+
                                                                                 <asp:Label ID="lblhserror" Visible="false" Font-Bold="true" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                                 <asp:Label ID="lbldhserror" Visible="false" Font-Bold="true" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                             </div>

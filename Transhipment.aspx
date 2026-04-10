@@ -3583,6 +3583,7 @@
                                                         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtInHouseItem" AutoPostBack="true" OnTextChanged="TxtInHouseItem_TextChanged" runat="server" TabIndex="129" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                         <cc1:AutoCompleteExtender ServiceMethod="GetInhouse" MinimumPrefixLength="1" CompletionInterval="100" CompletionListCssClass="ac_results" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="itemHighlighted" EnableCaching="false" CompletionSetCount="10" TargetControlID="TxtInHouseItem" ID="AutoCompleteExtender11" runat="server" FirstRowSelected="true"></cc1:AutoCompleteExtender>
                                                         <asp:Label ID="Label1" Visible="false" ForeColor="White" Font-Bold="true" BackColor="Brown" runat="server"></asp:Label>
+                                                        <asp:Label ID="ITEM_CASC_HSCODES" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                         <asp:Label ID="lbldhserror" Visible="false" ForeColor="White" Font-Bold="true" BackColor="Brown" runat="server"></asp:Label>
                                                         <asp:Label ID="lblhserror" Visible="false" ForeColor="White" Font-Bold="true" BackColor="Brown" runat="server"></asp:Label>
                                                     </div>
@@ -5926,18 +5927,7 @@
 
                                             </div>
 
-                                            <div class="flex justify-between gap-4 md:flex-nowrap flex-wrap mt-6 mb-6">
-                                                <asp:Button ID="btnprevitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnprevitem_Click" Text="Previous" TabIndex="174" />
-
-                                                <div class="flex gap-4 flex-wrap md:flex-nowrap md:max-w-[260px] w-full">
-                                                    <asp:Button ID="btnresetitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnresetitem_Click" Text="Reset" TabIndex="176" />
-
-
-
-                                                </div>
-                                                <asp:Button ID="btnnextitem" CssClass="duration-300 ease-in-out md:max-w-[120px] w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" runat="server" class="btn btn-info btn-lg" OnClick="btnnextitem_Click" Text="Next" TabIndex="177" />
-
-                                            </div>
+                                         
                                         </center>
 
                                         <div class="row">
@@ -6099,6 +6089,20 @@
                                         <div class="flex justify-end gap-4">
                                             <asp:Button ID="btnsaveitem" CssClass="duration-300 ease-in-out md:max-w-[120px] w-full bg-[#0560FD] bg-opacity-10 border hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-[#0560FD] text-center rounded-md text-sm sa700" runat="server" class="btn btn-info btn-lg" ValidationGroup="Item" OnClick="btnsaveitem_Click" Text="+ Add Item" TabIndex="175" />
                                         </div>
+
+
+                                           <div class="flex justify-between gap-4 md:flex-nowrap flex-wrap mt-6 mb-6">
+       <asp:Button ID="btnprevitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnprevitem_Click" Text="Previous" TabIndex="174" />
+
+       <div class="flex gap-4 flex-wrap md:flex-nowrap md:max-w-[260px] w-full">
+           <asp:Button ID="btnresetitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnresetitem_Click" Text="Reset" TabIndex="176" />
+
+
+
+       </div>
+       <asp:Button ID="btnnextitem" CssClass="duration-300 ease-in-out md:max-w-[120px] w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" runat="server" class="btn btn-info btn-lg" OnClick="btnnextitem_Click" Text="Next" TabIndex="177" />
+
+   </div>
 
                                     </ContentTemplate>
                                 </asp:UpdatePanel>

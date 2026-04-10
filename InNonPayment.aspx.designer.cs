@@ -1986,6 +1986,24 @@ namespace RET
         protected global::AjaxControlToolkit.AutoCompleteExtender AutoCompleteExtender7;
 
         /// <summary>
+        /// ClaimantName1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ClaimantName1;
+
+        /// <summary>
+        /// ClaimantName2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ClaimantName2;
+
+        /// <summary>
         /// ClaimantCRUEI control.
         /// </summary>
         /// <remarks>
@@ -2011,24 +2029,6 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator65;
-
-        /// <summary>
-        /// ClaimantName1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ClaimantName1;
-
-        /// <summary>
-        /// ClaimantName2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ClaimantName2;
 
         /// <summary>
         /// ClaimantNameC control.
@@ -5098,6 +5098,15 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::AjaxControlToolkit.AutoCompleteExtender AutoCompleteExtender15;
+
+        /// <summary>
+        /// ITEM_CASC_HSCODES control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ITEM_CASC_HSCODES;
 
         /// <summary>
         /// lblhserror control.

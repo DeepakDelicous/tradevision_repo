@@ -1345,6 +1345,8 @@ namespace RET
                     InnonPaymentEdit();
 
                 }
+                divamend.Visible = false;
+                divcancel.Visible = false;
                 if (Update != "")
                 {
                     divamend.Visible = false;
@@ -4951,6 +4953,8 @@ namespace RET
 
         private void hscode(string hscode)
         {
+
+           
 
             //string TYPEId = "";
             MyClass objhsn = new MyClass();
@@ -10513,7 +10517,7 @@ namespace RET
                             }
 
 
-                            string StrQuery1 = ("INSERT INTO [dbo].[TranshipmentItemDtl] ([ItemNo],[PermitId],[MessageType],[HSCode],[Description],[DGIndicator],[Contry],[Brand],[Model],[DrpVehicleType],[Enginecapacity],[Engineuom],[Orginregdate],[InHAWBOBL],InMAWBOBL,[OutHAWBOBL],OutMAWBOBL,[DutiableQty],[DutiableUOM],[TotalDutiableQty],[TotalDutiableUOM],[InvoiceQuantity],[HSQty],[HSUOM],[AlcoholPer],[UnitPrice],[UnitPriceCurrency],[ExchangeRate],[SumExchangeRate],[TotalLineAmount],[InvoiceCharges],[CIFFOB],[OPQty],[OPUOM],[IPQty],[IPUOM],[InPqty],[InPUOM],[ImPQty],[ImPUOM],[PreferentialCode],[GSTRate],[GSTUOM],[GSTAmount],[ExciseDutyRate],[ExciseDutyUOM],[ExciseDutyAmount],[CustomsDutyRate],[CustomsDutyUOM],[CustomsDutyAmount],[OtherTaxRate],[OtherTaxUOM],[OtherTaxAmount],[CurrentLot],[PreviousLot],[Making],[ShippingMarks1],[ShippingMarks2],[ShippingMarks3],[ShippingMarks4],[OptionalChrgeUOM],[Optioncahrge],[OptionalSumtotal],[OptionalSumExchage],[TouchUser],[TouchTime]) VALUES ('" + TxtSerialNo.Text + "','" + txt_code.Text + "','" + TxtMsgType.Text + "','" + TxtHSCodeItem.Text + "','" + TxtDescription.Text + "','" + ChkBGIndicator.Checked.ToString() + "','" + TxtCountryItem.Text + "','" + TxtBrand.Text + "','" + TxtModel.Text + "','" + DrpVehicleType.SelectedItem.Text + "','" + txtengine.Text + "','" + DrpVehicleCapacity.SelectedItem.Text + "','" + Convert.ToDateTime(orgindate).ToString("yyyy/MM/dd") + "','" + TxtHAWB.Text + "','" + TxtInMAWBOBL.Text + "','" + txtOutHAWB.Text + "','" + TxtOutMAWBOBL.Text + "','" + TxtTotalDutiableQuantity.Text + "','" + TDQUOM.SelectedItem.ToString() + "','" + txttotDutiableQty.Text + "','" + ddptotDutiableQty.SelectedItem.ToString() + "','" + TxtInvQty.Text + "','" + TxtHSQuantity.Text + "','" + HSQTYUOM.SelectedItem + "','" + txtAlcoholPer.Text + "','" + TxtUnitPrice.Text + "','" + DRPCurrency.SelectedItem + "','" + TxtExchangeRate.Text + "','" + TxtSumExRate.Text + "','" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "','" + Convert.ToDecimal(TxtTotalLineCharges.Text).ToString() + "','" + Convert.ToDecimal(TxtCIFFOB.Text).ToString() + "','" + TxtOPQty.Text + "','" + DRPOPQUOM.SelectedItem + "','" + TxtIPQty.Text + "','" + DRPIPQUOM.SelectedItem + "','" + TxtINPQty.Text + "','" + DRPINNPQUOM.SelectedItem + "','" + TxtIMPQty.Text + "','" + DRPIMPQUOM.SelectedItem + "','" + DrpPreferentialCode.SelectedItem + "','" + ItemGSTRate.Text + "','" + ItemGSTUOM.Text + "','" + Convert.ToDecimal(TxtItemSumGST.Text).ToString() + "','" + TxtExciseDutyRate.Text + "','" + TxtExciseDutyUOM.Text + "','" + TxtSumExciseDuty.Text + "','" + TxtCustomsDutyRate.Text + "','" + TxtCustomsDutyUOM.Text + "','" + TxtSumCustomsDuty.Text + "','" + TxtOtherTaxRate.Text + "','" + DrpOtherUOM.SelectedItem + "','" + TxtSumOtherTaxRate.Text + "','" + TxtCurrentLot.Text + "','" + TxtPreviousLot.Text + "','" + DrpMaking.SelectedItem + "','" + txtShippingMarks1.Text + "','" + txtShippingMarks2.Text + "','" + txtShippingMarks3.Text + "','" + txtShippingMarks4.Text + "','" + DrpOptionalUom.SelectedItem.Text + "','" + TxtOptionalPrice.Text + "','" + TxtOptionalExchageRate.Text + "','" + TxtOptionalSumExRate.Text + "','" + Touch_user + "','" + strTime + "')");
+                            string StrQuery1 = ("INSERT INTO [dbo].[TranshipmentItemDtl] ([ItemNo],[PermitId],[MessageType],[HSCode],[Description],[DGIndicator],[Contry],[Brand],[Model],[DrpVehicleType],[Enginecapacity],[Engineuom],[Orginregdate],[InHAWBOBL],InMAWBOBL,[OutHAWBOBL],OutMAWBOBL,[DutiableQty],[DutiableUOM],[TotalDutiableQty],[TotalDutiableUOM],[InvoiceQuantity],[HSQty],[HSUOM],[AlcoholPer],[UnitPrice],[UnitPriceCurrency],[ExchangeRate],[SumExchangeRate],[TotalLineAmount],[InvoiceCharges],[CIFFOB],[OPQty],[OPUOM],[IPQty],[IPUOM],[InPqty],[InPUOM],[ImPQty],[ImPUOM],[PreferentialCode],[GSTRate],[GSTUOM],[GSTAmount],[ExciseDutyRate],[ExciseDutyUOM],[ExciseDutyAmount],[CustomsDutyRate],[CustomsDutyUOM],[CustomsDutyAmount],[OtherTaxRate],[OtherTaxUOM],[OtherTaxAmount],[CurrentLot],[PreviousLot],[Making],[ShippingMarks1],[ShippingMarks2],[ShippingMarks3],[ShippingMarks4],[OptionalChrgeUOM],[Optioncahrge],[OptionalSumtotal],[OptionalSumExchage],[TouchUser],[TouchTime]) VALUES ('" + TxtSerialNo.Text + "','" + txt_code.Text + "','" + TxtMsgType.Text + "','" + TxtHSCodeItem.Text + "','" + TxtDescription.Text + "','" + ChkBGIndicator.Checked.ToString() + "','" + TxtCountryItem.Text + "','" + TxtBrand.Text + "','" + TxtModel.Text + "','" + DrpVehicleType.SelectedItem.Text + "','" + txtengine.Text + "','" + DrpVehicleCapacity.SelectedItem.Text + "','" + Convert.ToDateTime(orgindate).ToString("yyyy/MM/dd") + "','" + TxtHAWB.Text + "','" + TxtInMAWBOBL.Text + "','" + txtOutHAWB.Text + "','" + TxtOutMAWBOBL.Text + "','" + Convert.ToDecimal(TxtTotalDutiableQuantity.Text).ToString() + "','" + TDQUOM.SelectedItem.ToString() + "','" + Convert.ToDecimal(txttotDutiableQty.Text).ToString() + "','" + ddptotDutiableQty.SelectedItem.ToString() + "','" + Convert.ToDecimal(TxtInvQty.Text).ToString() + "','" + Convert.ToDecimal(TxtHSQuantity.Text).ToString() + "','" + HSQTYUOM.SelectedItem + "','" + Convert.ToDecimal(txtAlcoholPer.Text).ToString() + "','" + Convert.ToDecimal(TxtUnitPrice.Text).ToString() + "','" + DRPCurrency.SelectedItem + "','" + Convert.ToDecimal(TxtExchangeRate.Text).ToString() + "','" + Convert.ToDecimal(TxtSumExRate.Text).ToString() + "','" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "','" + Convert.ToDecimal(TxtTotalLineCharges.Text).ToString() + "','" + Convert.ToDecimal(TxtCIFFOB.Text).ToString() + "','" + Convert.ToDecimal(TxtOPQty.Text).ToString() + "','" + DRPOPQUOM.SelectedItem + "','" + Convert.ToDecimal(TxtIPQty.Text).ToString() + "','" + DRPIPQUOM.SelectedItem + "','" + Convert.ToDecimal(TxtINPQty.Text).ToString() + "','" + DRPINNPQUOM.SelectedItem + "','" + Convert.ToDecimal(TxtIMPQty.Text).ToString() + "','" + DRPIMPQUOM.SelectedItem + "','" + DrpPreferentialCode.SelectedItem + "','" + Convert.ToDecimal(ItemGSTRate.Text).ToString() + "','" + ItemGSTUOM.Text + "','" + Convert.ToDecimal(TxtItemSumGST.Text).ToString() + "','" + Convert.ToDecimal(TxtExciseDutyRate.Text).ToString() + "','" + TxtExciseDutyUOM.Text + "','" + Convert.ToDecimal(TxtSumExciseDuty.Text).ToString() + "','" + Convert.ToDecimal(TxtCustomsDutyRate.Text).ToString() + "','" + TxtCustomsDutyUOM.Text + "','" + Convert.ToDecimal(TxtSumCustomsDuty.Text).ToString() + "','" + Convert.ToDecimal(TxtOtherTaxRate.Text).ToString() + "','" + DrpOtherUOM.SelectedItem + "','" + Convert.ToDecimal(TxtSumOtherTaxRate.Text).ToString() + "','" + TxtCurrentLot.Text + "','" + TxtPreviousLot.Text + "','" + DrpMaking.SelectedItem + "','" + txtShippingMarks1.Text + "','" + txtShippingMarks2.Text + "','" + txtShippingMarks3.Text + "','" + txtShippingMarks4.Text + "','" + DrpOptionalUom.SelectedItem.Text + "','" + TxtOptionalPrice.Text + "','" + TxtOptionalExchageRate.Text + "','" + TxtOptionalSumExRate.Text + "','" + Touch_user + "','" + strTime + "')");
                             obj.exec(StrQuery1);
                             obj.closecon();
 
@@ -10637,6 +10641,24 @@ namespace RET
                             ItemDiv.Visible = true;
                             BtnAddNEWItem.Visible = false;
                             SummaryCalculate();
+                            MyClass objhsnd = new MyClass();
+                            string dataexit = "";
+                            string qry11s2a = "select * from [ITEM_CASC_HSCODES]  where  HSCode='" + TxtHSCodeItem.Text + "'";
+                            objhsnd.dr = objhsnd.ret_dr(qry11s2a);
+                            if (objhsnd.dr.Read())
+                            {
+                                dataexit = objhsnd.dr["HSCode"].ToString();
+
+                            }
+
+                            if (dataexit != "")
+                            {
+                                if (TxtProductCode1.Text == "")
+                                {
+                                    ScriptManager.RegisterStartupScript(this, GetType(), "Warning", "alert('The following controlled HS code(s) does not have a CASC Product Code. Item # " + TxtSerialNo.Text + " - " + TxtHSCodeItem.Text + "');", true);
+
+                                }
+                            }
                             Itemclear();
                         }
                         else
@@ -10667,7 +10689,7 @@ namespace RET
                         }
 
 
-                        string StrQuery1 = ("update [dbo].[TranshipmentItemDtl]  set InMAWBOBL='" + TxtInMAWBOBL.Text + "',OutMAWBOBL='" + TxtOutMAWBOBL.Text + "',[HSCode]='" + TxtHSCodeItem.Text + "',[Description]='" + TxtDescription.Text + "',[DGIndicator]='" + ChkBGIndicator.Checked.ToString() + "',[Contry]= '" + TxtCountryItem.Text + "',[Brand]='" + TxtBrand.Text + "',[Model]='" + TxtModel.Text + "',[DrpVehicleType]='" + DrpVehicleType.SelectedItem.Text + "',[Enginecapacity]='" + txtengine.Text + "',[Engineuom]='" + DrpVehicleCapacity.SelectedItem.Text + "',[Orginregdate]='" + Convert.ToDateTime(orgindate).ToString("yyyy/MM/dd") + "',[InHAWBOBL]='" + TxtHAWB.Text + "',[OutHAWBOBL]='" + txtOutHAWB.Text + "',[DutiableQty]='" + TxtTotalDutiableQuantity.Text + "',[DutiableUOM]='" + TDQUOM.SelectedItem.ToString() + "',[TotalDutiableQty]='" + txttotDutiableQty.Text + "',[TotalDutiableUOM]='" + ddptotDutiableQty.SelectedItem.ToString() + "',[InvoiceQuantity]='" + TxtInvQty.Text + "',[HSQty]='" + TxtHSQuantity.Text + "', [HSUOM]='" + HSQTYUOM.SelectedItem + "',[AlcoholPer]='" + txtAlcoholPer.Text + "',[ChkUnitPrice]='" + ChkUnitPrice.Checked + "',[UnitPrice]='" + TxtUnitPrice.Text + "',[UnitPriceCurrency]='" + DRPCurrency.SelectedItem + "',[ExchangeRate]='" + TxtExchangeRate.Text + "',[SumExchangeRate]='" + TxtSumExRate.Text + "',[TotalLineAmount]='" + TxtTotalLineAmount.Text + "',[InvoiceCharges]='" + TxtTotalLineCharges.Text + "',[CIFFOB]='" + TxtCIFFOB.Text + "',[OPQty]='" + TxtOPQty.Text + "',[OPUOM]='" + DRPOPQUOM.SelectedItem + "',[IPQty]='" + TxtIPQty.Text + "',[IPUOM]='" + DRPIPQUOM.SelectedItem + "',[InPqty]='" + TxtINPQty.Text + "',[InPUOM]='" + DRPINNPQUOM.SelectedItem + "',[ImPQty]='" + TxtIMPQty.Text + "',[ImPUOM]='" + DRPIMPQUOM.SelectedItem + "',[PreferentialCode]='" + DrpPreferentialCode.SelectedItem + "',[GSTRate]='" + ItemGSTRate.Text + "',[GSTUOM]='" + ItemGSTUOM.Text + "',[GSTAmount]='" + TxtItemSumGST.Text + "',[ExciseDutyRate]='" + TxtExciseDutyRate.Text + "', [ExciseDutyUOM]='" + TxtExciseDutyUOM.Text + "',[ExciseDutyAmount]='" + TxtSumExciseDuty.Text + "',[CustomsDutyRate]='" + TxtCustomsDutyRate.Text + "',[CustomsDutyUOM]='" + TxtCustomsDutyUOM.Text + "',[CustomsDutyAmount]='" + TxtSumCustomsDuty.Text + "',[OtherTaxRate]='" + TxtOtherTaxRate.Text + "',[OtherTaxUOM]='" + DrpOtherUOM.SelectedItem + "',[OtherTaxAmount]='" + TxtSumOtherTaxRate.Text + "',[CurrentLot]='" + TxtCurrentLot.Text + "',[PreviousLot]='" + TxtPreviousLot.Text + "',[Making]='" + DrpMaking.SelectedItem + "',[ShippingMarks1]='" + txtShippingMarks1.Text + "',[ShippingMarks2]='" + txtShippingMarks2.Text + "',[ShippingMarks3]='" + txtShippingMarks3.Text + "',[ShippingMarks4]='" + txtShippingMarks4.Text + "',OptionalChrgeUOM='" + DrpOptionalUom.SelectedItem.Text + "',[Optioncahrge]='" + TxtOptionalPrice.Text + "',[OptionalSumtotal]='" + TxtOptionalExchageRate.Text + "',[OptionalSumExchage]='" + TxtOptionalSumExRate.Text + "',[TouchUser]='" + Touch_user + "',[TouchTime]='" + strTime + "' where  MessageType='TNPDEC' AND PermitId='" + txt_code.Text + "' and ItemNo='" + TxtSerialNo.Text + "'");
+                        string StrQuery1 = ("update [dbo].[TranshipmentItemDtl]  set InMAWBOBL='" + TxtInMAWBOBL.Text + "',OutMAWBOBL='" + TxtOutMAWBOBL.Text + "',[HSCode]='" + TxtHSCodeItem.Text + "',[Description]='" + TxtDescription.Text + "',[DGIndicator]='" + ChkBGIndicator.Checked.ToString() + "',[Contry]= '" + TxtCountryItem.Text + "',[Brand]='" + TxtBrand.Text + "',[Model]='" + TxtModel.Text + "',[DrpVehicleType]='" + DrpVehicleType.SelectedItem.Text + "',[Enginecapacity]='" + txtengine.Text + "',[Engineuom]='" + DrpVehicleCapacity.SelectedItem.Text + "',[Orginregdate]='" + Convert.ToDateTime(orgindate).ToString("yyyy/MM/dd") + "',[InHAWBOBL]='" + TxtHAWB.Text + "',[OutHAWBOBL]='" + txtOutHAWB.Text + "',[DutiableQty]='" + Convert.ToDecimal(TxtTotalDutiableQuantity.Text).ToString() + "',[DutiableUOM]='" + TDQUOM.SelectedItem.ToString() + "',[TotalDutiableQty]='" + Convert.ToDecimal(txttotDutiableQty.Text).ToString() + "',[TotalDutiableUOM]='" + ddptotDutiableQty.SelectedItem.ToString() + "',[InvoiceQuantity]='" + Convert.ToDecimal(TxtInvQty.Text).ToString() + "',[HSQty]='" + Convert.ToDecimal(TxtHSQuantity.Text).ToString() + "', [HSUOM]='" + HSQTYUOM.SelectedItem + "',[AlcoholPer]='" + Convert.ToDecimal(txtAlcoholPer.Text).ToString() + "',[ChkUnitPrice]='" + ChkUnitPrice.Checked + "',[UnitPrice]='" + Convert.ToDecimal(TxtUnitPrice.Text).ToString() + "',[UnitPriceCurrency]='" + DRPCurrency.SelectedItem + "',[ExchangeRate]='" + Convert.ToDecimal(TxtExchangeRate.Text).ToString() + "',[SumExchangeRate]='" + Convert.ToDecimal(TxtSumExRate.Text).ToString() + "',[TotalLineAmount]='" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "',[InvoiceCharges]='" + Convert.ToDecimal(TxtTotalLineCharges.Text).ToString() + "',[CIFFOB]='" + Convert.ToDecimal(TxtCIFFOB.Text).ToString() + "',[OPQty]='" + Convert.ToDecimal(TxtOPQty.Text).ToString() + "',[OPUOM]='" + DRPOPQUOM.SelectedItem + "',[IPQty]='" + Convert.ToDecimal(TxtIPQty.Text).ToString() + "',[IPUOM]='" + DRPIPQUOM.SelectedItem + "',[InPqty]='" + Convert.ToDecimal(TxtINPQty.Text).ToString() + "',[InPUOM]='" + DRPINNPQUOM.SelectedItem + "',[ImPQty]='" + Convert.ToDecimal(TxtIMPQty.Text).ToString() + "',[ImPUOM]='" + DRPIMPQUOM.SelectedItem + "',[PreferentialCode]='" + DrpPreferentialCode.SelectedItem + "',[GSTRate]='" + ItemGSTRate.Text + "',[GSTUOM]='" + ItemGSTUOM.Text + "',[GSTAmount]='" + Convert.ToDecimal(TxtItemSumGST.Text).ToString() + "',[ExciseDutyRate]='" + Convert.ToDecimal(TxtExciseDutyRate.Text).ToString() + "', [ExciseDutyUOM]='" + TxtExciseDutyUOM.Text + "',[ExciseDutyAmount]='" + Convert.ToDecimal(TxtSumExciseDuty.Text).ToString() + "',[CustomsDutyRate]='" + Convert.ToDecimal(TxtCustomsDutyRate.Text).ToString() + "',[CustomsDutyUOM]='" + TxtCustomsDutyUOM.Text + "',[CustomsDutyAmount]='" + Convert.ToDecimal(TxtSumCustomsDuty.Text).ToString() + "',[OtherTaxRate]='" + Convert.ToDecimal(TxtOtherTaxRate.Text).ToString() + "',[OtherTaxUOM]='" + DrpOtherUOM.SelectedItem + "',[OtherTaxAmount]='" + Convert.ToDecimal(TxtSumOtherTaxRate.Text).ToString() + "',[CurrentLot]='" + TxtCurrentLot.Text + "',[PreviousLot]='" + TxtPreviousLot.Text + "',[Making]='" + DrpMaking.SelectedItem + "',[ShippingMarks1]='" + txtShippingMarks1.Text + "',[ShippingMarks2]='" + txtShippingMarks2.Text + "',[ShippingMarks3]='" + txtShippingMarks3.Text + "',[ShippingMarks4]='" + txtShippingMarks4.Text + "',OptionalChrgeUOM='" + DrpOptionalUom.SelectedItem.Text + "',[Optioncahrge]='" + TxtOptionalPrice.Text + "',[OptionalSumtotal]='" + TxtOptionalExchageRate.Text + "',[OptionalSumExchage]='" + TxtOptionalSumExRate.Text + "',[TouchUser]='" + Touch_user + "',[TouchTime]='" + strTime + "' where  MessageType='TNPDEC' AND PermitId='" + txt_code.Text + "' and ItemNo='" + TxtSerialNo.Text + "'");
                         obj.exec(StrQuery1);
                         obj.closecon();
 
@@ -10877,6 +10899,24 @@ namespace RET
                         ItemAddGrid.Visible = true;
                         ItemDiv.Visible = true;
                         BtnAddNEWItem.Visible = false;
+                        MyClass objhsnd = new MyClass();
+                        string dataexit = "";
+                        string qry11s2a = "select * from [ITEM_CASC_HSCODES]  where  HSCode='" + TxtHSCodeItem.Text + "'";
+                        objhsnd.dr = objhsnd.ret_dr(qry11s2a);
+                        if (objhsnd.dr.Read())
+                        {
+                            dataexit = objhsnd.dr["HSCode"].ToString();
+
+                        }
+
+                        if (dataexit != "")
+                        {
+                            if (TxtProductCode1.Text == "")
+                            {
+                                ScriptManager.RegisterStartupScript(this, GetType(), "Warning", "alert('The following controlled HS code(s) does not have a CASC Product Code. Item # " + TxtSerialNo.Text + " - " + TxtHSCodeItem.Text + "');", true);
+
+                            }
+                        }
                         Itemclear();
                         BindItemMaster();
                     }
@@ -14696,71 +14736,71 @@ namespace RET
             }
             else if (TabContainer1.ActiveTabIndex == 6)
             {
-                if (Update == "AMEND")
-                {
+                //if (Update == "AMEND")
+                //{
 
 
 
-                    divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                    divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                    divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
 
-                    divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
 
-                    divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
 
-                    divSummary.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-
-
-                    divamend.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-
-                    divamend.Attributes.Add("class", "flex flex-col justify-center items-center relative  active-stepper");
-                    divamend.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-
-                }
-                else
-                {
-                    divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                    divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                    divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-
-                    divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-
-                    divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-
-                    divSummary.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                    divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divSummary.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
 
 
-                    divcancel.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divamend.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
 
-                    divcancel.Attributes.Add("class", "flex flex-col justify-center items-center relative  active-stepper");
-                    divcancel.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                }
+                //    divamend.Attributes.Add("class", "flex flex-col justify-center items-center relative  active-stepper");
+                //    divamend.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
 
-                //divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                //divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                //divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                //divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                //divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                //divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                
-                //divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                //divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                //divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
-                //divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
-                //divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative active-stepper");
+                //}
+                //else
+                //{
+                //    divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //    divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+
+                //    divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+
+                //    divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+
+                //    divSummary.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                //    divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+
+
+                //    divcancel.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+
+                //    divcancel.Attributes.Add("class", "flex flex-col justify-center items-center relative  active-stepper");
+                //    divcancel.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                //}
+
+                divHeader.Attributes["class"] = divHeader.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                divHeader.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                divParty.Attributes["class"] = divParty.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                divParty.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                divCargo.Attributes["class"] = divCargo.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                divCargo.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+
+                divItem.Attributes["class"] = divItem.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                divItem.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                divCPC.Attributes["class"] = divCPC.Attributes["class"].Replace("active-stepper", "").Replace("complete-stepper", "").Trim();
+                divCPC.Attributes.Add("class", "flex flex-col justify-center items-center relative complete-stepper");
+                divSummary.Attributes.Add("class", "flex flex-col justify-center items-center relative active-stepper");
 
             }
             else if (TabContainer1.ActiveTabIndex == 7)

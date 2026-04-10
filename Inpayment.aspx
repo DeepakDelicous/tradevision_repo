@@ -1818,14 +1818,7 @@
                                                         </div>
 
                                                         <!-- CR UEI -->
-                                                        <div class="flex-1 min-w-[200px] max-w-[300px]">
-                                                            <label class="text-gray-500 text-sm font-medium">CR UEI</label>
-                                                            <div class="relative mt-1">
-                                                                <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantCRUEI" MaxLength="17" placeholder="" ValidationGroup="CLAIMANT" runat="server" TabIndex="41" CssClass="w-full h-10 bg-slate-100 rounded-md px-4 text-sm text-slate-950 font-medium outline-none border-none" Style="text-transform: uppercase;" />
-                                                                <asp:RegularExpressionValidator ID="RegularExpressionValidator27" runat="server" ControlToValidate="ClaimantCRUEI" ValidationExpression="^[\s\S]{0,17}$" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="CLAIMANT" Display="Dynamic" BackColor="yellow" />
-                                                            </div>
-                                                        </div>
-
+                                                       
                                                         <!-- Name 1 -->
                                                         <div class="flex-1 min-w-[200px] max-w-[300px]">
                                                             <label class="text-gray-500 text-sm font-medium">Name 1</label>
@@ -1843,6 +1836,14 @@
                                                                 <asp:RegularExpressionValidator ID="RegularExpressionValidator28" runat="server" ControlToValidate="ClaimantName2" ValidationExpression="^[\s\S]{0,17}$" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="CLAIMANT" Display="Dynamic" BackColor="yellow" />
                                                             </div>
                                                         </div>
+                                                         <div class="flex-1 min-w-[200px] max-w-[300px]">
+     <label class="text-gray-500 text-sm font-medium">CR UEI</label>
+     <div class="relative mt-1">
+         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantCRUEI" MaxLength="17" placeholder="" ValidationGroup="CLAIMANT" runat="server" TabIndex="41" CssClass="w-full h-10 bg-slate-100 rounded-md px-4 text-sm text-slate-950 font-medium outline-none border-none" Style="text-transform: uppercase;" />
+         <asp:RegularExpressionValidator ID="RegularExpressionValidator27" runat="server" ControlToValidate="ClaimantCRUEI" ValidationExpression="^[\s\S]{0,17}$" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="CLAIMANT" Display="Dynamic" BackColor="yellow" />
+     </div>
+ </div>
+
                                                     </div>
 
 
@@ -1942,6 +1943,15 @@
 
 
                                                     <div class="mt-2 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
+                                                         <div class="w-full">
+     <label class="text-gray-500 text-sm font-medium">Claimant Name</label>
+     <div class="relative mt-1">
+         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantNameC" MaxLength="100" placeholder="" runat="server" TabIndex="45" type="text" ValidationGroup="CLAIMANT" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" Style="text-transform: uppercase;"></asp:TextBox>
+
+         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ClaimantNameC" ID="RegularExpressionValidator5" ValidationExpression="^[\s\S]{0,100}$" runat="server" ErrorMessage="Maximum 100 characters allowed." ValidationGroup="CLAIMANT"></asp:RegularExpressionValidator>
+
+     </div>
+ </div>
                                                         <div class="w-full">
                                                             <label class="text-gray-500 text-sm font-medium">Claimant ID</label>
                                                             <div class="relative mt-1">
@@ -1952,15 +1962,7 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="w-full">
-                                                            <label class="text-gray-500 text-sm font-medium">Claimant Name</label>
-                                                            <div class="relative mt-1">
-                                                                <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ClaimantNameC" MaxLength="100" placeholder="" runat="server" TabIndex="45" type="text" ValidationGroup="CLAIMANT" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" Style="text-transform: uppercase;"></asp:TextBox>
-
-                                                                <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ClaimantNameC" ID="RegularExpressionValidator5" ValidationExpression="^[\s\S]{0,100}$" runat="server" ErrorMessage="Maximum 100 characters allowed." ValidationGroup="CLAIMANT"></asp:RegularExpressionValidator>
-
-                                                            </div>
-                                                        </div>
+                                                       
                                                         <%--  <div class="w-full">
                                                             <button class="duration-300 ease-in-out w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700">
                                                                 + Add New Party
@@ -4042,6 +4044,7 @@
                                                                         <div class="flex-1 relative mt-1">
                                                                             <div class="row">
                                                                                 <div class="col-sm-12 ">
+                                                                                      <asp:Label ID="ITEM_CASC_HSCODES" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                                     <asp:Label ID="lblhserror" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                                     <asp:Label ID="lbldhserror" Visible="false" CssClass="hserror" Font-Bold="true" Font-Size="Medium" ForeColor="White" BackColor="Brown" runat="server"></asp:Label>
                                                                                 </div>
@@ -6820,6 +6823,7 @@
                                                                 </div>
                                                             </div>
                                                             <br />
+
                                                             <asp:GridView ID="AddItemGrid" Font-Size="10" OnRowDeleting="AddItemGrid_RowDeleting" PageSize="50" AllowPaging="True" DataKeyNames="Id" OnPageIndexChanging="AddItemGrid_PageIndexChanging" CssClass="table table-striped table-bordered table-hover" runat="server" AutoGenerateColumns="false">
                                                                 <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
                                                                 <Columns>

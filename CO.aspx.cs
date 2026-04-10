@@ -3682,6 +3682,8 @@ namespace RET
         private void hscode(string hscode)
         {
 
+
+
             //string TYPEId = "";
             string qry11s2 = "select * from [CommonMasterType] as a , HSCode as b where a.Id=b.Typeid  and HSCode='" + hscode + "' and Out=1";
             obj.dr = obj.ret_dr(qry11s2);
@@ -4661,9 +4663,10 @@ namespace RET
                     {
                         TxtSumExRate.Text = "0.00";
                     }
-                    string StrQuery1 = ("INSERT INTO [dbo].[COItemDtl] ([ItemNo],[PermitId],[MessageType],[HSCode],[Description],[Contry],[UnitPrice],[UnitPriceCurrency],[ExchangeRate],[SumExchangeRate],[TotalLineAmount],[CIFFOB],[InvoiceQty],[HSQTY],[HSUOM],[ShippingMark],[CerItemQty],[CerItemUOM],[ManfCostDate],[TextileCat],[TextileQuotaQty],[TextileQuotaQtyUOM],[ItemValue],[InvoiceNumber],[InvoiceDate],[HSOnCer],[OriginCriterion],[PerOrgainCRI],[CertificateDes],[Touch_user],[TouchTime],[Hawblno]) VALUES ('" + TxtSerialNo.Text + "','" + txt_code.Text + "','" + TxtMsgType.Text + "','" + TxtHSCodeItem.Text + "','" + TxtDescription.Text + "','" + TxtCountryItem.Text + "','" + TxtUnitPrice.Text + "','" + DRPCurrency.SelectedItem.ToString() + "','" + TxtExchangeRate.Text + "','" + TxtSumExRate.Text + "','" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "','" + Convert.ToDecimal(TxtCIFFOB.Text) + "','" + TxtInvQTY2.Text + "','" + TxtHSQty.Text + "','" + drpInvoiceUOM.SelectedItem.ToString() + "','" + txtShippingMarks1.Text + "','" + TxtCerITEMQty.Text + "','" + DrpCerITemUOM.SelectedItem.ToString() + "','" + Convert.ToDateTime(ManuDate).ToString("yyyy/MM/dd") + "','" + TxtTextileCat.Text + "','" + TxtTextileQty.Text + "','" + DrpTextQoutoQTYUOM.SelectedItem.ToString() + "','" + txtcifitemvalue.Text + "','" + txtinvno.Text + "','" + Convert.ToDateTime(InvDate).ToString("yyyy/MM/dd") + "','" + TxtHSCodeCer.Text + "','" + txtcreteriencode.Text + "," + txtcodesc1.Text + "," + txtcodesc2.Text + "," + txtcodesc3.Text + "','" + TxtPerOrgCir.Text + "','" + TxtCerDes.Text + "','" + Touch_user + "',Convert(VARCHAR,'" + strTime + "',108),'" + txthawbl.Text.ToUpper() + "')");
+                    string StrQuery1 = ("INSERT INTO [dbo].[COItemDtl] ([ItemNo],[PermitId],[MessageType],[HSCode],[Description],[Contry],[UnitPrice],[UnitPriceCurrency],[ExchangeRate],[SumExchangeRate],[TotalLineAmount],[CIFFOB],[InvoiceQty],[HSQTY],[HSUOM],[ShippingMark],[CerItemQty],[CerItemUOM],[ManfCostDate],[TextileCat],[TextileQuotaQty],[TextileQuotaQtyUOM],[ItemValue],[InvoiceNumber],[InvoiceDate],[HSOnCer],[OriginCriterion],[PerOrgainCRI],[CertificateDes],[Touch_user],[TouchTime],[Hawblno]) VALUES ('" + TxtSerialNo.Text + "','" + txt_code.Text + "','" + TxtMsgType.Text + "','" + TxtHSCodeItem.Text + "','" + TxtDescription.Text + "','" + TxtCountryItem.Text + "','" + Convert.ToDecimal( TxtUnitPrice.Text).ToString() + "','" + DRPCurrency.SelectedItem.ToString() + "','" + Convert.ToDecimal(TxtExchangeRate.Text).ToString() + "','" + Convert.ToDecimal(TxtSumExRate.Text).ToString() + "','" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "','" + Convert.ToDecimal(TxtCIFFOB.Text) + "','" + Convert.ToDecimal(TxtInvQTY2.Text).ToString() + "','" + Convert.ToDecimal(TxtHSQty.Text).ToString() + "','" + drpInvoiceUOM.SelectedItem.ToString() + "','" + txtShippingMarks1.Text + "','" + Convert.ToDecimal(TxtCerITEMQty.Text).ToString() + "','" + DrpCerITemUOM.SelectedItem.ToString() + "','" + Convert.ToDateTime(ManuDate).ToString("yyyy/MM/dd") + "','" + TxtTextileCat.Text + "','" + Convert.ToDecimal(TxtTextileQty.Text ).ToString()+ "','" + DrpTextQoutoQTYUOM.SelectedItem.ToString() + "','" + Convert.ToDecimal(txtcifitemvalue.Text).ToString() + "','" + txtinvno.Text + "','" + Convert.ToDateTime(InvDate).ToString("yyyy/MM/dd") + "','" + TxtHSCodeCer.Text + "','" + txtcreteriencode.Text + "," + txtcodesc1.Text + "," + txtcodesc2.Text + "," + txtcodesc3.Text + "','" + TxtPerOrgCir.Text + "','" + TxtCerDes.Text + "','" + Touch_user + "',Convert(VARCHAR,'" + strTime + "',108),'" + txthawbl.Text.ToUpper() + "')");
                     obj.exec(StrQuery1);
                     obj.closecon();
+
                     BindItemMaster();
                     summerycalculate();
 
@@ -4673,6 +4676,24 @@ namespace RET
                     ItemAddGrid.Visible = true;
                     ItemDiv.Visible = true;
                     BtnAddNEWItem.Visible = false;
+                    //MyClass objhsnd = new MyClass();
+                    //string dataexit = "";
+                    //string qry11s2a = "select * from [ITEM_CASC_HSCODES]  where  HSCode='" + TxtHSCodeItem.Text + "'";
+                    //objhsnd.dr = objhsnd.ret_dr(qry11s2a);
+                    //if (objhsnd.dr.Read())
+                    //{
+                    //    dataexit = objhsnd.dr["HSCode"].ToString();
+
+                    //}
+
+                    //if (dataexit != "")
+                    //{
+                    //    if (TxtProductCode1.Text == "")
+                    //    {
+                    //        ScriptManager.RegisterStartupScript(this, GetType(), "Warning", "alert('The following controlled HS code(s) does not have a CASC Product Code. Item # " + TxtSerialNo.Text + " - " + TxtHSCodeItem.Text + "');", true);
+
+                    //    }
+                    //}
                     Itemclear();
                 }
                 else
@@ -4721,7 +4742,7 @@ namespace RET
                     TxtTextileQty.Text = "0.00";
                 }
 
-                string StrQuery1 = ("UPDATE [dbo].[COItemDtl] SET  [ItemNo] = '" + TxtSerialNo.Text + "',OriginCriterion='" + txtcreteriencode.Text + "," + txtcodesc1.Text + "," + txtcodesc2.Text + "," + txtcodesc3.Text + "',InvoiceNumber='" + txtinvno.Text + "',[PermitId] = '" + txt_code.Text + "',[MessageType] = '" + TxtMsgType.Text + "',[HSCode] ='" + TxtHSCodeItem.Text + "',[Description] = '" + TxtDescription.Text + "',[Contry] = '" + TxtCountryItem.Text + "',[UnitPrice] = '" + TxtUnitPrice.Text + "',[UnitPriceCurrency] = '" + DRPCurrency.SelectedItem.ToString() + "',[ExchangeRate] = '" + TxtExchangeRate.Text + "',[SumExchangeRate] = '" + TxtSumExRate.Text + "',[TotalLineAmount] ='" + TxtTotalLineAmount.Text + "',[CIFFOB] = '" + TxtCIFFOB.Text + "',[InvoiceQty] = '" + TxtInvQTY2.Text + "',[HSQTY] = '" + TxtHSQty.Text + "',[HSUOM] = '" + drpInvoiceUOM.SelectedItem.ToString() + "',[ShippingMark] = '" + txtShippingMarks1.Text + "',[CerItemQty] = '" + TxtCerITEMQty.Text + "',[CerItemUOM] = '" + DrpCerITemUOM.SelectedItem.ToString() + "',[ManfCostDate] = '" + Convert.ToDateTime(ManuDate).ToString("yyyy/MM/dd") + "',[TextileCat] = '" + TxtTextileCat.Text + "',[TextileQuotaQty] = '" + TxtTextileQty.Text + "',[TextileQuotaQtyUOM] = '" + DrpTextQoutoQTYUOM.SelectedItem.ToString() + "',[ItemValue]='" + txtcifitemvalue.Text + "',[InvoiceDate] = '" + Convert.ToDateTime(InvDate).ToString("yyyy/MM/dd") + "',[HSOnCer] = '" + TxtHSCodeCer.Text + "',[PerOrgainCRI] = '" + TxtPerOrgCir.Text + "',[CertificateDes] = '" + TxtCerDes.Text + "',[Touch_user] = '" + Touch_user + "',[TouchTime]=Convert(VARCHAR,'" + strTime + "',108),Hawblno='" + txthawbl.Text.ToUpper() + "'  WHERE  MessageType='COODEC' AND PermitId='" + txt_code.Text + "' and ItemNo='" + TxtSerialNo.Text + "' ");
+                string StrQuery1 = ("UPDATE [dbo].[COItemDtl] SET  [ItemNo] = '" + TxtSerialNo.Text + "',OriginCriterion='" + txtcreteriencode.Text + "," + txtcodesc1.Text + "," + txtcodesc2.Text + "," + txtcodesc3.Text + "',InvoiceNumber='" + txtinvno.Text + "',[PermitId] = '" + txt_code.Text + "',[MessageType] = '" + TxtMsgType.Text + "',[HSCode] ='" + TxtHSCodeItem.Text + "',[Description] = '" + TxtDescription.Text + "',[Contry] = '" + TxtCountryItem.Text + "',[UnitPrice] = '" + Convert.ToDecimal(TxtUnitPrice.Text).ToString() + "',[UnitPriceCurrency] = '" + DRPCurrency.SelectedItem.ToString() + "',[ExchangeRate] = '" + Convert.ToDecimal(TxtExchangeRate.Text).ToString() + "',[SumExchangeRate] = '" + Convert.ToDecimal(TxtSumExRate.Text).ToString() + "',[TotalLineAmount] ='" + Convert.ToDecimal(TxtTotalLineAmount.Text).ToString() + "',[CIFFOB] = '" + Convert.ToDecimal(TxtCIFFOB.Text).ToString() + "',[InvoiceQty] = '" + Convert.ToDecimal(TxtInvQTY2.Text).ToString() + "',[HSQTY] = '" + Convert.ToDecimal(TxtHSQty.Text).ToString() + "',[HSUOM] = '" + drpInvoiceUOM.SelectedItem.ToString() + "',[ShippingMark] = '" + txtShippingMarks1.Text + "',[CerItemQty] = '" + Convert.ToDecimal(TxtCerITEMQty.Text ).ToString()+ "',[CerItemUOM] = '" + DrpCerITemUOM.SelectedItem.ToString() + "',[ManfCostDate] = '" + Convert.ToDateTime(ManuDate).ToString("yyyy/MM/dd") + "',[TextileCat] = '" + TxtTextileCat.Text + "',[TextileQuotaQty] = '" + Convert.ToDecimal(TxtTextileQty.Text).ToString() + "',[TextileQuotaQtyUOM] = '" + DrpTextQoutoQTYUOM.SelectedItem.ToString() + "',[ItemValue]='" + txtcifitemvalue.Text + "',[InvoiceDate] = '" + Convert.ToDateTime(InvDate).ToString("yyyy/MM/dd") + "',[HSOnCer] = '" + TxtHSCodeCer.Text + "',[PerOrgainCRI] = '" + TxtPerOrgCir.Text + "',[CertificateDes] = '" + TxtCerDes.Text + "',[Touch_user] = '" + Touch_user + "',[TouchTime]=Convert(VARCHAR,'" + strTime + "',108),Hawblno='" + txthawbl.Text.ToUpper() + "'  WHERE  MessageType='COODEC' AND PermitId='" + txt_code.Text + "' and ItemNo='" + TxtSerialNo.Text + "' ");
                 obj.exec(StrQuery1);
                 obj.closecon();
 
@@ -4755,7 +4776,24 @@ namespace RET
                 ItemAddGrid.Visible = true;
                 ItemDiv.Visible = true;
                 BtnAddNEWItem.Visible = false;
+                //MyClass objhsnd = new MyClass();
+                //string dataexit = "";
+                //string qry11s2a = "select * from [ITEM_CASC_HSCODES]  where  HSCode='" + TxtHSCodeItem.Text + "'";
+                //objhsnd.dr = objhsnd.ret_dr(qry11s2a);
+                //if (objhsnd.dr.Read())
+                //{
+                //    dataexit = objhsnd.dr["HSCode"].ToString();
 
+                //}
+
+                //if (dataexit != "")
+                //{
+                //    if (TxtProductCode1.Text == "")
+                //    {
+                //        ScriptManager.RegisterStartupScript(this, GetType(), "Warning", "alert('The following controlled HS code(s) does not have a CASC Product Code. Item # " + TxtSerialNo.Text + " - " + TxtHSCodeItem.Text + "');", true);
+
+                //    }
+                //}
                 Itemclear();
             }
 

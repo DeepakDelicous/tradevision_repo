@@ -4146,6 +4146,15 @@ namespace RET
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// ITEM_CASC_HSCODES control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ITEM_CASC_HSCODES;
+
+        /// <summary>
         /// lbldhserror control.
         /// </summary>
         /// <remarks>
@@ -6315,33 +6324,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.Label Error_LBL;
 
         /// <summary>
-        /// btnprevitem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnprevitem;
-
-        /// <summary>
-        /// btnresetitem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnresetitem;
-
-        /// <summary>
-        /// btnnextitem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnnextitem;
-
-        /// <summary>
         /// lblitemalert control.
         /// </summary>
         /// <remarks>
@@ -6385,6 +6367,33 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsaveitem;
+
+        /// <summary>
+        /// btnprevitem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnprevitem;
+
+        /// <summary>
+        /// btnresetitem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnresetitem;
+
+        /// <summary>
+        /// btnnextitem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnnextitem;
 
         /// <summary>
         /// TabPanel1 control.
