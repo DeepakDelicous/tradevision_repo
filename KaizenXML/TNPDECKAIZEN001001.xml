@@ -1,0 +1,205 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904201707" instanceIdentifier="K19042000006" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <tnp:TranshipmentMovement>
+      <tnp:Header>
+        <cbc:MessageReference>201904200006</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190420</cbc:Date>
+          <cbc:SequenceNumeric>0006</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>TNPDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>IGM</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>--SELECT-- : 0.00</cbc:FreeText>
+        </cac:Remarks>
+      </tnp:Header>
+      <tnp:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>CZ</cbc:LocationCode>
+          <cbc:LocationName>CHANGI FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>KZ</cbc:LocationCode>
+          <cbc:LocationName>KEPPEL FTZ</cbc:LocationName>
+        </cac:ReceiptLocation>
+      </tnp:Cargo>
+      <tnp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>4</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>SQ202</cbc:ConveyanceReferenceNumber>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>MAWB</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190420</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYPKG</cbc:LoadingPort>
+        </cac:InwardTransport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOY123</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>ESSEL123</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBLTEST</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cac:AdditionalVesselInformation>
+            <cbc:VesselType>CV</cbc:VesselType>
+          </cac:AdditionalVesselInformation>
+          <cbc:DepartureDate>20190425</cbc:DepartureDate>
+          <cbc:DischargePort>AUSYD</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>AU</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </tnp:Transport>
+      <tnp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>197702772D</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>CHANGI INTERNATIONAL AIRPORT SERVICES</cbc:Name>
+            <cbc:Name>PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>198402847H</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>BAYSWATER SHIPPING &amp; FORWARDING PTE</cbc:Name>
+            <cbc:Name>LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+        <cac:OutwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:OutwardCarrierAgentParty>
+        <cac:ConsigneeParty>
+          <cac:PartyName>
+            <cbc:Name>RHEINMETALL LANDSYSTEME GMBH C/O</cbc:Name>
+            <cbc:Name>RHEINMETALL MAN MILITARY VEHICLES</cbc:Name>
+          </cac:PartyName>
+          <cac:Address>
+            <cac:AddressLine>
+              <cbc:Line>223 VIKING DRIVE</cbc:Line>
+            </cac:AddressLine>
+            <cbc:CityName>KATHMANDU</cbc:CityName>
+            <cbc:PostalZone>44600</cbc:PostalZone>
+            <cbc:CountryCode>NP</cbc:CountryCode>
+          </cac:Address>
+        </cac:ConsigneeParty>
+      </tnp:Party>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>95030030</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>ELECTRIC TRAINS INCL TRACKS SIGNALS &amp; OTHER ACCESSORIES</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2300.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>3500.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HARD DISK DRIVES (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1500.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>MY</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>35000.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">1500.0000</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>3</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>82015000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>SECATEURS &amp; SIMILAR ONE HANDED PRUNERS &amp; SHEARS (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2000.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>PG</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>3200.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>4</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>75022000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>UNWROUGHT NICKEL ALLOYS (KGM)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="KGM">1520.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>PH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>36000.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>5</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>85423100</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PROCESSORS &amp; CONTROLLERS CONVERTERS LOGIC CIRCUITS AMPLIFIERS CLOCK TIMING CIRCUITS OR OTHER CIRCUITS (MIL)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="MIL">4500.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AS</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>36520.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="MIL">4500.0000</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Summary>
+        <cbc:NumberOfItems>5</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>114220.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">15</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="KGM">25500</cbc:TotalGrossWeight>
+      </tnp:Summary>
+    </tnp:TranshipmentMovement>
+  </InboundMessage>
+</TradenetDeclaration>

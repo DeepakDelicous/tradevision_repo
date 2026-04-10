@@ -1,0 +1,167 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904201919" instanceIdentifier="K19042000019" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <out:Outward>
+      <out:Header>
+        <cbc:MessageReference>201904200003</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190420</cbc:Date>
+          <cbc:SequenceNumeric>0003</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>OUTDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>DRT</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+      </out:Header>
+      <out:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>MBCC</cbc:LocationCode>
+          <cbc:LocationName>MARINA BAY CRUISE CENTRE SINGAPORE</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>MBCC</cbc:LocationCode>
+          <cbc:LocationName>MARINA BAY CRUISE CENTRE SINGAPORE</cbc:LocationName>
+        </cac:ReceiptLocation>
+      </out:Cargo>
+      <out:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber></cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>HHH</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>HHH</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190416</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYAOR</cbc:LoadingPort>
+        </cac:InwardTransport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VVV123</cbc:ConveyanceReferenceNumber>
+              <cbc:MAWBOUCROBLNumber>AAAAA</cbc:MAWBOUCROBLNumber>
+              <cbc:TransportIdentifier>DDDD</cbc:TransportIdentifier>
+            </cac:TransportMode>
+          </cac:TransportMeans>
+          <cac:AdditionalVesselInformation>
+            <cbc:VesselType>CV</cbc:VesselType>
+            <cbc:VesselNationality>AM : ARMENIA</cbc:VesselNationality>
+            <cac:TowingVessel>
+              <cbc:VesselID>aaa</cbc:VesselID>
+              <cbc:VesselName>aaa</cbc:VesselName>
+            </cac:TowingVessel>
+          </cac:AdditionalVesselInformation>
+          <cbc:DepartureDate>20190425</cbc:DepartureDate>
+          <cbc:DischargePort>MAAGA</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>CV</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </out:Transport>
+      <out:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>197801878K</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>OOCL (SINGAPORE) PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:OutwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:OutwardCarrierAgentParty>
+        <cac:ExporterParty>
+          <cac:PartyDetail>
+            <cac:PartyIdentification>
+              <cbc:ID>200200381C</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+              <cbc:Name>ABES GROUP COMPANY PTE. LTD</cbc:Name>
+            </cac:PartyName>
+          </cac:PartyDetail>
+          <cac:Address>
+            <cac:Addressline>
+              <cbc:Line>ADDRESS1</cbc:Line>
+            </cac:Addressline>
+            <cbc:CityName>JURONG EAST</cbc:CityName>
+            <cbc:CountrySubentityCode>-</cbc:CountrySubentityCode>
+            <cbc:CountrySubentity>-</cbc:CountrySubentity>
+            <cbc:PostalZone>560063</cbc:PostalZone>
+            <cbc:CountryCode>SG</cbc:CountryCode>
+          </cac:Address>
+        </cac:ExporterParty>
+      </out:Party>
+      <out:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HARD DISK DRIVES (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2522.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>US</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>25222.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">9855.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>NNN</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:OutHAWBHUCRHBLNumber>HAWBS1233</cbc:OutHAWBHUCRHBLNumber>
+      </out:Item>
+      <out:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>95030099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER TOYS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">9855.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>SG</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>15000.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">9855.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>NNN</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:OutHAWBHUCRHBLNumber>HAWBS1233</cbc:OutHAWBHUCRHBLNumber>
+      </out:Item>
+      <out:Summary>
+        <cbc:NumberOfItems>2</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>40222.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="BAR">11</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="KGM">12</cbc:TotalGrossWeight>
+      </out:Summary>
+    </out:Outward>
+  </InboundMessage>
+</TradenetDeclaration>

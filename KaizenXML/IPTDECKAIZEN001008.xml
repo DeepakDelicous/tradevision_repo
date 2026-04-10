@@ -1,0 +1,214 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904171104" instanceIdentifier="K19041600001" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <ipt:InPayment>
+      <ipt:Header>
+        <cbc:MessageReference>201904160008</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190416</cbc:Date>
+          <cbc:SequenceNumeric>0008</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>IPTDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>GST</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+      </ipt:Header>
+      <ipt:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>KZ</cbc:LocationCode>
+          <cbc:LocationName>KEPPEL FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>O</cbc:LocationCode>
+          <cbc:LocationName>OTHERS</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cbc:BlanketStartDate>20190416</cbc:BlanketStartDate>
+      </ipt:Cargo>
+      <ipt:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOYSSS</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>VESSEL</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBLISHJH</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190416</cbc:ArrivalDate>
+          <cbc:LoadingPort>AUSYD</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </ipt:Transport>
+      <ipt:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>200200381C</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>ABES GROUP COMPANY PTE. LTD.</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+      </ipt:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>TEST1</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190416</cbc:InvoiceDate>
+        <cac:SupplierManufacturerParty>
+          <cbc:CodeValue>-</cbc:CodeValue>
+          <cbc:Name>-</cbc:Name>
+        </cac:SupplierManufacturerParty>
+        <cbc:UnitPriceTermType>CIF</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="USD">3333.00</cbc:Amount>
+          <cbc:ExchangeRate>1.3548</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+      </cac:Invoice>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>33049990</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER MAKE-UP PREPARATIONS FOR SKIN CARE EXCL MEDICAMENTS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">88.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>SE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>451.15</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="USD">333.00</cbc:Amount>
+            <cbc:ExchangeRate>1.3548</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="TNE">0.0010</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>31.58</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER STORAGE UNITS (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">5555.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>EE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1354.80</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="USD">1000.00</cbc:Amount>
+            <cbc:ExchangeRate>1.3548</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="TNE">0.0010</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>94.84</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>3</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>73269099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER ARTICLES OF IRON OR STEEL (TNE)</cbc:GoodsDescription>
+        <cac:ItemQuantity></cac:ItemQuantity>
+        <cbc:OriginCountry>TR</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>902.30</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="USD">666.00</cbc:Amount>
+            <cbc:ExchangeRate>1.3548</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="TNE">0.0010</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>63.16</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>4</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>56012100</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>WADDING &amp; ARTICLES THEREOF OF COTTON</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LOT">1.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>GB</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1807.30</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="USD">1334.00</cbc:Amount>
+            <cbc:ExchangeRate>1.3548</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="TNE">0.0010</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>126.51</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Summary>
+        <cbc:NumberOfItems>4</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>4515.55</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">12</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">3.3334</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>316.09</cbc:TotalGoodsAndServicesTaxAmount>
+          <cbc:TotalAmountPayable>316.09</cbc:TotalAmountPayable>
+        </cac:TotalTariff>
+      </ipt:Summary>
+    </ipt:InPayment>
+  </InboundMessage>
+</TradenetDeclaration>

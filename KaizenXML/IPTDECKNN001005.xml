@@ -1,0 +1,143 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904181547" instanceIdentifier="K19040500005" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <ipt:InPayment>
+      <ipt:Header>
+        <cbc:MessageReference>201904050005</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190405</cbc:Date>
+          <cbc:SequenceNumeric>0005</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>IPTDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>DNG</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>VENDOR TEST CASE - SET 5 (IN-PAYMENT)</cbc:FreeText>
+        </cac:Remarks>
+      </ipt:Header>
+      <ipt:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>LHQ</cbc:LocationCode>
+          <cbc:LocationName></cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>O</cbc:LocationCode>
+          <cbc:LocationName>OTHERS</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cbc:BlanketStartDate>20190405</cbc:BlanketStartDate>
+      </ipt:Cargo>
+      <ipt:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>3</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>22</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>22</cbc:TransportIdentifier>
+            </cac:TransportMode>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190408</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYJHB</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </ipt:Transport>
+      <ipt:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>198700002E</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>FORESPAND FOOD ENTERPRISE PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+        <cac:Licence>
+          <cbc:ReferenceID>IP03L1886</cbc:ReferenceID>
+        </cac:Licence>
+      </ipt:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>INVSET5</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190405</cbc:InvoiceDate>
+        <cac:SupplierManufacturerParty>
+          <cbc:CodeValue>-</cbc:CodeValue>
+          <cbc:Name>-</cbc:Name>
+        </cac:SupplierManufacturerParty>
+        <cbc:UnitPriceTermType>CIF</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">13200.00</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+      </cac:Invoice>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>22030091</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>ABC EXTRA STRONG BEER</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LTR">9000.0000</cbc:HarmonizedSystemQuantity>
+          <cbc:TotalDutiableQuantity unitCode="LTR">9000.00</cbc:TotalDutiableQuantity>
+          <cbc:DutiableQuantity unitCode="LTR">0.3750</cbc:DutiableQuantity>
+          <cbc:AlcoholPercent>5.80</cbc:AlcoholPercent>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>MY</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>13200.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>ZBP0AAA00CS</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="LTR">9000.0000</cbc:CASCProductQuantity>
+          <cac:AdditionalCASCIdentification>
+            <cbc:CASCCodeOne>AD99999</cbc:CASCCodeOne>
+          </cac:AdditionalCASCIdentification>
+        </cac:CASCProduct>
+        <cbc:BrandName>ABC</cbc:BrandName>
+        <cbc:ModelDescription>ABC</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cac:PackingDescription>
+          <cbc:OuterPackQuantity unitCode="CTN">1000</cbc:OuterPackQuantity>
+          <cbc:InPackQuantity unitCode="CAN">24</cbc:InPackQuantity>
+        </cac:PackingDescription>
+        <cac:Tariff>
+          <cbc:PreferentialCode>PRF</cbc:PreferentialCode>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>3116.40</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+          <cac:ExciseDuty>
+            <cbc:DutyRate>60.0000</cbc:DutyRate>
+            <cbc:DutyRateUnit>LPA</cbc:DutyRateUnit>
+            <cbc:DutyAmount>31320.00</cbc:DutyAmount>
+          </cac:ExciseDuty>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Summary>
+        <cbc:NumberOfItems>1</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>13200.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="CTN">1000</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="KGM">25000</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>3116.40</cbc:TotalGoodsAndServicesTaxAmount>
+          <cbc:TotalExciseDutyAmount>31320.00</cbc:TotalExciseDutyAmount>
+          <cbc:TotalAmountPayable>34436.40</cbc:TotalAmountPayable>
+        </cac:TotalTariff>
+      </ipt:Summary>
+    </ipt:InPayment>
+  </InboundMessage>
+</TradenetDeclaration>

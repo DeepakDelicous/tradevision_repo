@@ -1,0 +1,336 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904191827" instanceIdentifier="K19041900004" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <inp:InNonPayment>
+      <inp:Header>
+        <cbc:MessageReference>201904190004</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190419</cbc:Date>
+          <cbc:SequenceNumeric>0004</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>INPDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>REX</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>
+INVOICE NUMBER :SDAD</cbc:FreeText>
+        </cac:Remarks>
+      </inp:Header>
+      <inp:Cargo>
+        <cbc:CargoPackingType>9</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>JZ</cbc:LocationCode>
+          <cbc:LocationName>JURONG FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>SZ</cbc:LocationCode>
+          <cbc:LocationName>SEMBAWANG FTZ</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+          <cbc:EquipmentID>ABCD1234567</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL20</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>60</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>SEAL145</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>2</cbc:SequenceNumeric>
+          <cbc:EquipmentID>ABCD1234567</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL20</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>75</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>SEAL8585</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>3</cbc:SequenceNumeric>
+          <cbc:EquipmentID>ABCD1234567</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL20</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>60</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>SEAL123</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>4</cbc:SequenceNumeric>
+          <cbc:EquipmentID>ABCD1234567</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL20</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>60</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>SEAL143</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+      </inp:Cargo>
+      <inp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOY142</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>VESSEL142</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBL142</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190420</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYJHB</cbc:LoadingPort>
+        </cac:InwardTransport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOY123</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>VESSEL123</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBL123</cbc:MAWBOUCROBLNumber>
+            <cac:AdditionalVesselInformation>
+              <cbc:VesselType>CV</cbc:VesselType>
+            </cac:AdditionalVesselInformation>
+          </cac:TransportMeans>
+          <cbc:DepartureDate>20190419</cbc:DepartureDate>
+          <cbc:DischargePort>JPKOK</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>JP</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </inp:Transport>
+      <inp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:FreightForwarderParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:FreightForwarderParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE. LTD.</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>198402847H</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>BAYSWATER SHIPPING &amp; FORWARDING PTE</cbc:Name>
+            <cbc:Name>LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+        <cac:OutwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE. LTD.</cbc:Name>
+          </cac:PartyName>
+        </cac:OutwardCarrierAgentParty>
+        <cac:ExporterParty>
+          <cac:PartyDetail>
+            <cac:PartyIdentification>
+              <cbc:ID>198402847H</cbc:ID>
+            </cac:PartyIdentification>
+          </cac:PartyDetail>
+          <cac:PartyIdentification>
+            <cbc:ID>198402847H</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>BAYSWATER SHIPPING &amp; FORWARDING PTE</cbc:Name>
+            <cbc:Name>LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ExporterParty>
+        <cac:ConsigneeParty>
+          <cac:PartyName>
+            <cbc:Name>INDIA GROUS</cbc:Name>
+          </cac:PartyName>
+          <cac:Address>
+            <cac:AddressLine>
+              <cbc:Line>NO 3 NETHAJI STREET</cbc:Line>
+              <cbc:CityName>MAHARASHTRA</cbc:CityName>
+              <cbc:CountrySubentity>-</cbc:CountrySubentity>
+              <cbc:PostalZone>527777</cbc:PostalZone>
+              <cbc:CountryCode>IN</cbc:CountryCode>
+            </cac:AddressLine>
+          </cac:Address>
+        </cac:ConsigneeParty>
+      </inp:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>TEST4</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190419</cbc:InvoiceDate>
+        <cbc:UnitPriceTermType>FOB</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">374682.00</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+        <cac:FreightCharge>
+          <cbc:Amount currencyID="SGD">250.00</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+        </cac:FreightCharge>
+        <cac:InsuranceCharge>
+          <cbc:Amount currencyID="SGD">3749.32</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          <cbc:ChargePercent>1</cbc:ChargePercent>
+        </cac:InsuranceCharge>
+      </cac:Invoice>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>33041000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>LIP MAKE-UP PREPARATIONS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1230.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>94670.33</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">93670.50</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">1230.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>NNN</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>HBL142</cbc:InHAWBHUCRHBLNumber>
+        <cbc:OutHAWBHUCRHBLNumber>OUT143</cbc:OutHAWBHUCRHBLNumber>
+        <cbc:ItemInvoiceNumber>TEST4</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6626.92</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HARD DISK DRIVES (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">14455.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>94670.33</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">93670.50</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">14455.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>NNN</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>HBL142</cbc:InHAWBHUCRHBLNumber>
+        <cbc:OutHAWBHUCRHBLNumber>OUT143</cbc:OutHAWBHUCRHBLNumber>
+        <cbc:ItemInvoiceNumber>TEST4</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6626.92</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>3</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER STORAGE UNITS (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2556.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>94670.33</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">93670.50</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">2556.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>NNNMN</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>HBL142</cbc:InHAWBHUCRHBLNumber>
+        <cbc:OutHAWBHUCRHBLNumber>OUT143</cbc:OutHAWBHUCRHBLNumber>
+        <cbc:ItemInvoiceNumber>TEST4</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6626.92</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>4</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>85423900</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER ELECTRONIC INTEGRATED CIRCUITS (MIL)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="MIL">15500.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>RS</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>94670.33</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">93670.50</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="MIL">15500.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:ModelDescription>SDSD</cbc:ModelDescription>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>HBL142</cbc:InHAWBHUCRHBLNumber>
+        <cbc:OutHAWBHUCRHBLNumber>OUT143</cbc:OutHAWBHUCRHBLNumber>
+        <cbc:ItemInvoiceNumber>TEST4</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6626.92</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Summary>
+        <cbc:NumberOfItems>4</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>378681.32</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">12</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">255</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>26507.68</cbc:TotalGoodsAndServicesTaxAmount>
+        </cac:TotalTariff>
+      </inp:Summary>
+    </inp:InNonPayment>
+  </InboundMessage>
+</TradenetDeclaration>

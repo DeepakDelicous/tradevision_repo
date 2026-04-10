@@ -1,0 +1,143 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904131747" instanceIdentifier="K19041200005" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <out:Outward>
+      <out:Header>
+        <cbc:MessageReference>201904130007</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190413</cbc:Date>
+          <cbc:SequenceNumeric>0007</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>OUTDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>DRT</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>1123</cbc:FreeText>
+        </cac:Remarks>
+        <cac:CustomsProcedureCodeInformation>
+          <cbc:CustomsProcedureCode>4401000</cbc:CustomsProcedureCode>
+          <cac:CPCProcessingCode>
+            <cbc:ProcessingCodeOne>KR</cbc:ProcessingCodeOne>
+            <cbc:ProcessingCodeTwo>TESTAEO123</cbc:ProcessingCodeTwo>
+          </cac:CPCProcessingCode>
+        </cac:CustomsProcedureCodeInformation>
+      </out:Header>
+      <out:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>THQ</cbc:LocationCode>
+          <cbc:LocationName>TUAS HQ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>CZ</cbc:LocationCode>
+          <cbc:LocationName>CHANGI FTZ</cbc:LocationName>
+        </cac:ReceiptLocation>
+      </out:Cargo>
+      <out:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>3</cbc:ModeCode>
+            </cac:TransportMode>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190413</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYKUL</cbc:LoadingPort>
+        </cac:InwardTransport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>4</cbc:ModeCode>
+              <cbc:MAWBOUCROBLNumber>MAWBS</cbc:MAWBOUCROBLNumber>
+              <cbc:ConveyanceReferenceNumber>SQ205</cbc:ConveyanceReferenceNumber>
+            </cac:TransportMode>
+          </cac:TransportMeans>
+          <cbc:DepartureDate>20190415</cbc:DepartureDate>
+          <cbc:DischargePort>AUMEL</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>AU</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </out:Transport>
+      <out:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:OutwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>197201770G</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>SINGAPORE AIRPORT TERMINAL SERVICES</cbc:Name>
+          </cac:PartyName>
+        </cac:OutwardCarrierAgentParty>
+        <cac:ExporterParty>
+          <cac:PartyDetail>
+            <cac:PartyIdentification>
+              <cbc:ID>200200381C</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+              <cbc:Name>ABES GROUP COMPANY PTE. LTD</cbc:Name>
+            </cac:PartyName>
+          </cac:PartyDetail>
+          <cac:Address>
+            <cac:Addressline>
+              <cbc:Line>ADDRESS1</cbc:Line>
+            </cac:Addressline>
+            <cbc:CityName>JURONG EAST</cbc:CityName>
+            <cbc:CountrySubentityCode>-</cbc:CountrySubentityCode>
+            <cbc:CountrySubentity>-</cbc:CountrySubentity>
+            <cbc:PostalZone>560063</cbc:PostalZone>
+            <cbc:CountryCode>SG</cbc:CountryCode>
+          </cac:Address>
+        </cac:ExporterParty>
+        <cac:ConsigneeParty>
+          <cac:PartyName>
+            <cbc:Name>PT UNISEM BATAM</cbc:Name>
+          </cac:PartyName>
+          <cac:Address>
+            <cac:AddressLine>
+              <cbc:Line>JI.S.PARMAN KAV.201 MUKA KUNING,</cbc:Line>
+            </cac:AddressLine>
+            <cbc:CityName>29433 BATAM ISLAND</cbc:CityName>
+            <cbc:PostalZone>45451</cbc:PostalZone>
+            <cbc:CountryCode>ID</cbc:CountryCode>
+          </cac:Address>
+        </cac:ConsigneeParty>
+      </out:Party>
+      <out:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84732100</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PARTS &amp; ACCESSORIES OF ELECTRONIC CALCULATING MACHINES OF SUBHEADING 84701000 84702100 OR 84702900 EXCL COVERS CARRYING CASES &amp; THE LIKE</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LOT">1.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>SG</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>23619.72</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </out:Item>
+      <out:Summary>
+        <cbc:NumberOfItems>1</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>23619.72</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">15</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="KGM">455</cbc:TotalGrossWeight>
+      </out:Summary>
+    </out:Outward>
+  </InboundMessage>
+</TradenetDeclaration>

@@ -1,0 +1,122 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201903051609" instanceIdentifier="RET 002" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <inp:InNonPayment>
+      <inp:Header>
+        <cbc:MessageReference>201903050001</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190305</cbc:Date>
+          <cbc:SequenceNumeric>0001</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>INPDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>GTR</cbc:DeclarationType>
+      </inp:Header>
+      <inp:Cargo>
+        <cbc:CargoPackingType>5 </cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>THQ</cbc:LocationCode>
+          <cbc:LocationName>TUAS HQ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>RECYCL</cbc:LocationCode>
+          <cbc:LocationName>GST RELIEF ON REUSABLE GOODS</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cac:ExhibitionTemporaryImportPeriod>
+          <cbc:StartDate>20190305</cbc:StartDate>
+          <cbc:EndDate>20190305</cbc:EndDate>
+        </cac:ExhibitionTemporaryImportPeriod>
+        <cbc:EndDate>20190305</cbc:EndDate>
+      </inp:Cargo>
+      <inp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>3</cbc:ModeCode>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber></cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190305</cbc:ArrivalDate>
+          <cbc:LoadingPort>MYKUL</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </inp:Transport>
+      <inp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199004574N</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>HARBORAIR LOGISTICS PTE </cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+      </inp:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>2457</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190305</cbc:InvoiceDate>
+        <cbc:UnitPriceTermType>CIF</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">99000.00</cbc:Amount>
+          <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+      </cac:Invoice>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>73110099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER CONTAINERS FOR COMPRESSED OR LIQUEFIED GAS OF CAPACITY OF 10L OR MORE OF IRON OR STEEL (TNE)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="TNE">20.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>MY</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>99000.00</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">99000.00</cbc:Amount>
+            <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode></cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="--Select--">0.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>SUNNY</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>False</cbc:DangerousGoodsIndicator>
+        <cbc:ItemInvoiceNumber>2457</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6930.00</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Summary>
+        <cbc:NumberOfItems>1.00</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>99000.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="BOX">200</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">100</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>6930.00</cbc:TotalGoodsAndServicesTaxAmount>
+          <cbc:TotalAmountPayable>6930.00</cbc:TotalAmountPayable>
+        </cac:TotalTariff>
+      </inp:Summary>
+    </inp:InNonPayment>
+  </InboundMessage>
+</TradenetDeclaration>

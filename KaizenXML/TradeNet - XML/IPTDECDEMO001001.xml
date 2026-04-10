@@ -1,0 +1,946 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904251435" instanceIdentifier="K19042500001" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <ipt:InPayment>
+      <ipt:Header>
+        <cbc:MessageReference>201904250001</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190425</cbc:Date>
+          <cbc:SequenceNumeric>0001</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>IPTDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>GST</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>HSHSHHSHSH</cbc:FreeText>
+        </cac:Remarks>
+      </ipt:Header>
+      <ipt:Cargo>
+        <cbc:CargoPackingType>9</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>PPZ</cbc:LocationCode>
+          <cbc:LocationName>PASIR PANJANG FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>O</cbc:LocationCode>
+          <cbc:LocationName>OTHERS</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>5</cbc:SequenceNumeric>
+          <cbc:EquipmentID>CXDU1968332</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL40</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>400</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>785852</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+        <cbc:BlanketStartDate>20190425</cbc:BlanketStartDate>
+      </ipt:Cargo>
+      <ipt:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOY123</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>VESSEL123</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBLUY5252</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190425</cbc:ArrivalDate>
+          <cbc:LoadingPort>AUSYD</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </ipt:Transport>
+      <ipt:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:FreightForwarderParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:FreightForwarderParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>200200381C</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>ABES GROUP COMPANY PTE. LTD.</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+      </ipt:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>TEST</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190425</cbc:InvoiceDate>
+        <cac:SupplierManufacturerParty>
+          <cbc:CodeValue>-</cbc:CodeValue>
+          <cbc:Name>-</cbc:Name>
+        </cac:SupplierManufacturerParty>
+        <cbc:UnitPriceTermType>CFR</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">38431.44</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+        <cac:InsuranceCharge>
+          <cbc:Amount currencyID="SGD">384.31</cbc:Amount>
+          <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          <cbc:ChargePercent>1.00</cbc:ChargePercent>
+        </cac:InsuranceCharge>
+      </cac:Invoice>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>95030099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER TOYS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="KGM">125.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>MY</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1855.81</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">1837.44</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>IDAMISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">125.0000</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>129.91</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>65050020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HAIR-NETS (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">11.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>BE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>67.63</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">66.96</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>4.73</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>3</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>48194000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER SACKS &amp; BAGS OF PAPER PAPERBOARD CELLULOSE WADDING OR WEBS OF CELLULOSE FIBRES (TNE)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="TNE">0.0010</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>2535.10</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">2510.00</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>177.46</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>4</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>49111090</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER TRADE ADVERTISING MATERIAL COMMERCIAL CATALOGUES &amp; THE LIKE</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">50.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>KR</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>3702.13</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">3665.48</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>259.15</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>5</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>96162000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>POWDER PUFFS &amp; PADS FOR APPLYING COSMETICS OR TOILET PREPARATIONS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">123.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>LU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>5594.75</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">5539.36</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>391.63</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>6</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>95030099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER TOYS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">25.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>DE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>118.78</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">117.60</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>IDAMISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">25.0000</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>8.31</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>7</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>71179099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER PARTS FOR IMITATION JEWELLERY OF OTHER MATERIALS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">123.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1665.83</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">1649.34</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>116.61</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>8</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>85011022</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER STEPPER DC MOTORS OUTPUT NOT OVER 5W (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1222.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>TR</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>146.79</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">145.34</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>10.28</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>9</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>48219090</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER UNPRINTED LABELS OF PAPER OR PAPERBOARD</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">11.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>277.35</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">274.60</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>19.41</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>10</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>33049990</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER MAKE-UP PREPARATIONS FOR SKIN CARE EXCL MEDICAMENTS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1111.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>US</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>3149.10</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">3117.92</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>220.44</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>11</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>97040000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>POSTAGE OR REVENUE STAMPS STAMP POSTMARKS FIRST DAY COVERS POSTAL STATIONERY &amp; THE LIKE USED OR UNUSED OTHER THAN OF HEADING 4907</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LOT">1.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>BE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>111.02</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">109.92</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>7.77</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>12</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>66039020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER PARTS TRIMMINGS &amp; ACCESSORIES OF ARTICLES OF HEADING 6602</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LOT">1.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>DE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>3980.85</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">3941.44</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>278.66</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>13</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>96110000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HAND OPERATED DATE SEALING OR NUMBERING STAMPS &amp; THE LIKE &amp; HAND PRINTING SET OF COMPOSING STICKS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">111.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>177.11</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">175.36</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>12.40</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>14</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>78060090</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER ARTICLES OF LEAD</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">111.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>124.26</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">123.03</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>8.70</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>15</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>56012100</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>WADDING &amp; ARTICLES THEREOF OF COTTON</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">252.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>BG</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>337.42</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">334.08</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>23.62</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>16</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>65050020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>HAIR-NETS (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">8588.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>AU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1791.38</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">1773.64</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>125.40</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>17</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84733090</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER PARTS &amp; ACCESSORIES FOR MACHINES OF HEADING 8471 EXCL COVERS CARRYING CASES &amp; THE LIKE</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2555.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>153.68</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">152.16</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>10.76</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>18</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>97030000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>ORIGINAL SCULPTURES &amp; STATUARY</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="LOT">1.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>LU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>495.22</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">490.32</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>34.67</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>19</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>87089970</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>ENGINE BRACKETS FOR VEHICLES OF HEADING 8702 8703 OR 8704</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2522.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>322.78</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">319.58</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>22.59</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>20</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>33043000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>MANICURE &amp; PEDICURE PREPARATIONS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2500.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>DE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>90.17</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">89.28</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6.31</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>21</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>78060030</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>TUBES PIPES &amp; TUBE OR PIPE FITTINGS OF LEAD</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2522.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>84.12</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">83.29</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>5.89</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>22</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>97011000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PAINTINGS DRAWINGS &amp; PASTELS BY HAND OTHER THAN OF HEADING 4906</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1255.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>FR</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>95.63</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">94.68</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>6.69</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>23</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>47079000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER RECOVERED PAPER OR PAPERBOARD INCL UNSORTED WASTE &amp; SCRAP (TNE)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="TNE">0.0250</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>LU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>623.57</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">617.40</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>43.65</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>24</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>73269099</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER ARTICLES OF IRON OR STEEL (TNE)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="TNE">0.2500</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>US</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>246.76</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">244.32</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>MISC</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="TNE">0.2500</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>17.27</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>25</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>88039090</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>OTHER PARTS OF GOODS OF HEADINGS 8801 &amp; 8802</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">1222.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>NL</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1814.30</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">1796.34</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>127.00</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>26</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>87089115</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>RADIATORS FOR VEHICLES OF HEADING 8701</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">123.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>DE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>933.32</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">924.08</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>65.33</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+          <cac:ExciseDuty>
+            <cbc:DutyRate>12.0000</cbc:DutyRate>
+            <cbc:DutyRateUnit>PER</cbc:DutyRateUnit>
+            <cbc:DutyAmount>0.00</cbc:DutyAmount>
+          </cac:ExciseDuty>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>27</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>88052990</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PARTS OF OTHER ARTICLES OF 8805</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">123.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>BE</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>900.52</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">891.60</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>63.04</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>28</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>98920030</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PARTS AND EQUIPMENT FROM SHIPPING AIRCRAFT OR OIL RIG COMPANYS STOCK FOR USE SOLELY IN ITS OWN SHIPS AIRCRAFT OR OIL RIGS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">252.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>BG</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>40.18</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">39.78</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>2.81</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>29</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>56012100</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>WADDING &amp; ARTICLES THEREOF OF COTTON</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2555.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>DK</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>230.52</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">228.24</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>16.14</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>30</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>87081010</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>BUMPERS &amp; PARTS THEREOF FOR VEHICLES OF HEADING 8701</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">25.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>1555.46</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">1540.06</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>108.88</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>31</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>33041000</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>LIP MAKE-UP PREPARATIONS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2524.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CH</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>85.20</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">84.36</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>5.96</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Item>
+        <cbc:ItemSequenceNumeric>32</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84314300</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>PARTS OF BORING OR SINKING MACHINERY OF SUBHEADING 843041 OR 843049</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2555.0000</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>LU</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>5508.98</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">5454.44</cbc:Amount>
+            <cbc:ExchangeRate>1.0000</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cbc:BrandName> UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>hbl123</cbc:InHAWBHUCRHBLNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>385.63</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </ipt:Item>
+      <ipt:Summary>
+        <cbc:NumberOfItems>32</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>38815.72</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">125</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">1200</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>2717.10</cbc:TotalGoodsAndServicesTaxAmount>
+          <cbc:TotalAmountPayable>2717.10</cbc:TotalAmountPayable>
+        </cac:TotalTariff>
+      </ipt:Summary>
+    </ipt:InPayment>
+  </InboundMessage>
+</TradenetDeclaration>

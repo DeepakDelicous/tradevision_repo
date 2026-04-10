@@ -1,0 +1,252 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="AdminCreateList.aspx.cs" Inherits="RET.AdminCreateList" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script >
+        function myFunction() {
+
+
+
+
+            $("#ManageTradeMailbox").css('color', 'White');
+            debugger;
+            $("#ManageTradeMailbox").css('background-color', 'red');
+
+
+
+
+
+        }
+
+
+    </script>
+
+    <div class="flex items-start flex-no-wrap">
+         <div class="px-6 py-6 lg:max-w-[1150px] w-full mx-auto">
+             <div class="flex gap-y-3 items-center justify-between flex-wrap">
+                <div class="">
+                  <h1 class="text-2xl sa700 leading-normal text-gray-800">
+                    Admin Create
+                  </h1>
+                </div>
+                <div class="flex items-center gap-3 flex-wrap">
+                  <asp:Button ID="NewInvoice" runat="server" OnClick="NewInvoice_Click" CssClass="duration-300 group ease-in-out gap-3 md:w-[164px] w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" Text="Add New Record" />
+                </div>
+              </div>
+
+             <div class="w-full bg-white my-shadow rounded-2xl px-6 py-5 mt-4">
+                 <div class="">       
+                    <asp:GridView ID="GridView1" HeaderStyle-CssClass="w-full h-10 py-4 px-10 bg-[#F4F6FA] rounded-l-lg" PagerStyle-CssClass="pager" RowStyle-CssClass="rows" AllowPaging="true" DataKeyNames="Id" Font-Size="Small" ShowHeaderWhenEmpty="true" EmptyDataText="No Records found" PageSize="10" Width="100%" FooterStyle-CssClass="w-full h-10 py-4 px-10 bg-[#F4F6FA] rounded-lg" runat="server" AutoGenerateColumns="false" CssClass="w-full bg-white rounded whitespace-nowrap" RowStyle-Font-Bold="true" >
+
+                                        <Columns>
+
+
+                                            <asp:TemplateField HeaderText="ID" SortExpression="Id" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0">
+                                                <ItemTemplate>
+                                                    <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                        <asp:Label ID="Id" runat="server" Text='<%#Eval("Id")%>'>
+                                                        </asp:Label>
+                                                    </p>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+
+                          
+
+                                            <asp:TemplateField HeaderText="Account ID" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                                <ItemTemplate>
+                                                    <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                        <asp:Label ID="LblAccountID" runat="server"
+                                                        Text='<%#Eval("AccountID")%>'>
+                                                        </asp:Label>
+                                                    </p>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+
+                        <asp:TemplateField HeaderText="Name" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0"  >
+                                        <ItemTemplate>
+                                          <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                            <asp:Label ID="LblName" runat="server"
+                                            Text='<%#Eval("Name")%>'>
+                                            </asp:Label>
+                                          </p>
+                                        </ItemTemplate>
+                                        </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="UEN" Visible="false" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                        <ItemTemplate>
+                                          <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                            <asp:Label ID="LblUEN" runat="server"
+                                                Text='<%#Eval("UEN")%>'>
+                                                </asp:Label>
+                                          </p>
+                                        </ItemTemplate>
+                                        </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="GST Registration" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false"  >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblGSTRegistration" runat="server"
+                                                Text='<%#Eval("GSTRegistration")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="Contact Name" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0"  >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblContactName" runat="server"
+                                                Text='<%#Eval("ContactName")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="ContactTel" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false"  >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblContactTel" runat="server"
+                                                Text='<%#Eval("ContactTel")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="ContactFax" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false"  >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblContactFax" runat="server"
+                                                Text='<%#Eval("ContactFax")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="ContactMobile" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0"  >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblContactMobile" runat="server"
+                                                Text='<%#Eval("ContactMobile")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="ContactEmail" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblContactEmail" runat="server"
+                                                Text='<%#Eval("ContactEmail")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="Address" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblAddress" runat="server"
+                                                Text='<%#Eval("Address")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="PostalCode" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblPostalCode" runat="server"
+                                                Text='<%#Eval("PostalCode")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="CountryCode" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" Visible="false" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblCountryCode" runat="server"
+                                                Text='<%#Eval("CountryCode")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="Status" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblStatus" runat="server"
+                                                Text='<%#Eval("Status")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="UserCreated" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblUserCreated" runat="server"
+                                                Text='<%#Eval("UserCreated")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="DateCreated" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblDateCreated" runat="server"
+                                                Text='<%#Eval("DateCreated")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="UserLastUpdated" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblUserLastUpdated" runat="server"
+                                                Text='<%#Eval("UserLastUpdated")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            <asp:TemplateField HeaderText="DateLastUpdated" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500  px-2 text-left pl-0" >
+                                            <ItemTemplate>
+                                                <p class="text-slate-500 text-xs font-medium py-3 md:px-0 px-2 rounded-l-lg">
+                                                <asp:Label ID="LblDateLastUpdated" runat="server"
+                                                Text='<%#Eval("DateLastUpdated")%>'>
+                                                </asp:Label>
+                                                </p>
+                                            </ItemTemplate>
+                                            </asp:TemplateField>
+
+                                            
+                                                <asp:TemplateField HeaderText="Action" HeaderStyle-CssClass="text-sm font-medium leading-none text-gray-500 px-2 text-left pl-0">
+                                                    <ItemTemplate>
+                                                        <div class="flex gap-4 items-center pr-6 status-action">
+                                                            <div class="relative">
+                                                                <asp:ImageButton CssClass="hover-img" ImageUrl="images/blue-pencil.svg" Width="16" Height="16" OnClick="InpaymentEdit_Click" ID="InpaymentEdit" runat="server" />
+                                                                <asp:ImageButton ImageUrl="images/pencil.svg" Width="16" Height="16" OnClick="InpaymentEdit_Click" ID="ImageButton1" runat="server" />
+                                                            </div>
+                                                            <div class="relative">
+                                                                <asp:LinkButton CssClass="hover-img" OnClick="imgDelete_Click" data-target='<%#"#"+DataBinder.Eval(Container.DataItem,"Id")%>' Width="16" Height="16" ID="imgDelete" runat="server"><img src="images/red-bin.svg" /> </asp:LinkButton>
+                                                                <asp:LinkButton OnClick="imgDelete_Click" data-target='<%#"#"+DataBinder.Eval(Container.DataItem,"Id")%>' Width="16" Height="16" ID="LinkButton1" runat="server"><img src="images/bin-gray.svg" /> </asp:LinkButton>
+                                                            </div>
+
+                                                        </div>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+
+                                        </Columns>
+                                    </asp:GridView>
+                    
+                 </div>
+             </div>
+
+         </div>
+    </div>
+
+</asp:Content>

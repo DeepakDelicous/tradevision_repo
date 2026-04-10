@@ -1,0 +1,123 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904201941" instanceIdentifier="K19042000002" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <coo:CertificateOfOrigin>
+      <coo:Header>
+        <cbc:MessageReference>201904200002</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190420</cbc:Date>
+          <cbc:SequenceNumeric>0002</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>COODEC</cbc:CommonAccessReference>
+        <cbc:ApplicationType>COO</cbc:ApplicationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <coo:Certificate>
+          <cbc:ApplicationProductType>NA</cbc:ApplicationProductType>
+          <cac:CertificateDetail>
+            <cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+            <cbc:CertificateType>29</cbc:CertificateType>
+          </cac:CertificateDetail>
+        </coo:Certificate>
+        <cbc:CurrencyCode>SGD</cbc:CurrencyCode>
+      </coo:Header>
+      <coo:Transport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>4</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>SQ202</cbc:ConveyanceReferenceNumber>
+            </cac:TransportMode>
+          </cac:TransportMeans>
+          <cbc:DepartureDate>20190426</cbc:DepartureDate>
+          <cbc:DischargePort>NZAKL</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>NZ</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </coo:Transport>
+      <coo:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:ExporterParty>
+          <cac:PartyName>
+            <cbc:Name>ARMSTRONG INDUSTRIAL CORP</cbc:Name>
+          </cac:PartyName>
+          <cac:AddressLine>
+            <cbc:Line>223 VIKING DRIVE</cbc:Line>
+            <cbc:Line>SINGAPORE</cbc:Line>
+            <cbc:Line>SG625870</cbc:Line>
+          </cac:AddressLine>
+        </cac:ExporterParty>
+        <cac:ConsigneeParty>
+          <cac:PartyName>
+            <cbc:Name>AKZO NOBEL COATINGS LTD</cbc:Name>
+          </cac:PartyName>
+          <cac:AddressLine>
+            <cbc:Line>686 ROSEBANK ROAD,</cbc:Line>
+            <cbc:CityName>AUCKLAND, NEW ZEALAND</cbc:CityName>
+          </cac:AddressLine>
+        </cac:ConsigneeParty>
+        <cac:ManufacturerParty>
+          <cac:PartyDetail>
+            <cac:PartyIdentification>
+              <cbc:ID>198003808K</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+              <cbc:Name>ARMSTRONG INDUSTRIAL CORP</cbc:Name>
+            </cac:PartyName>
+          </cac:PartyDetail>
+          <cac:Address>
+            <cac:AddressLine>
+              <cbc:Line>NEYTHAL RD 62</cbc:Line>
+            </cac:AddressLine>
+            <cbc:CityName>SINGAPORE</cbc:CityName>
+            <cbc:CountrySubentity>-</cbc:CountrySubentity>
+            <cbc:PostalZone>625870</cbc:PostalZone>
+            <cbc:CountryCode>SG</cbc:CountryCode>
+          </cac:Address>
+        </cac:ManufacturerParty>
+      </coo:Party>
+      <coo:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84717010</cbc:ItemHarmonizedSystemCode>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">25222.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>SG</cbc:OriginCountry>
+        <cbc:ItemCIFFOBValue>15000.00</cbc:ItemCIFFOBValue>
+        <cac:ItemCertificate>
+          <cbc:ItemCertificateQuantity unitCode="NMB">25000.00</cbc:ItemCertificateQuantity>
+          <cbc:ItemValue>14000</cbc:ItemValue>
+          <cac:ItemCertificateDescription>
+            <cbc:Line>DESC : FLOPPY
+QTY : 25000 NMB
+HS CODE : 8471</cbc:Line>
+          </cac:ItemCertificateDescription>
+          <cbc:ManufacturingCostDate>20180720</cbc:ManufacturingCostDate>
+          <cbc:ItemInvoiceNumber>QWER123</cbc:ItemInvoiceNumber>
+          <cbc:ItemInvoiceDate>20190422</cbc:ItemInvoiceDate>
+          <cbc:OriginCriterion>RVC</cbc:OriginCriterion>
+        </cac:ItemCertificate>
+      </coo:Item>
+      <coo:Summary>
+        <cbc:NumberOfItems>1</cbc:NumberOfItems>
+      </coo:Summary>
+    </coo:CertificateOfOrigin>
+  </InboundMessage>
+</TradenetDeclaration>

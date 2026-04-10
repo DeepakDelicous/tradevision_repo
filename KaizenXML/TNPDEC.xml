@@ -1,0 +1,137 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201903231832" instanceIdentifier="K19032300004" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <tnp:TranshipmentMovement>
+      <tnp:Header>
+        <cbc:MessageReference>201903230004</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190323</cbc:Date>
+          <cbc:SequenceNumeric>0004</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:DeclarationType>TTI</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>VENDOR TEST CASE SET 1 TRANSHIPMENT</cbc:FreeText>
+        </cac:Remarks>
+      </tnp:Header>
+      <tnp:Cargo>
+        <cbc:CargoPackingType>5 </cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>JZ</cbc:LocationCode>
+          <cbc:LocationName>JURONG FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>CZ</cbc:LocationCode>
+          <cbc:LocationName>CHANGI FTZ</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cac:StorageLocation>
+          <cbc:LocationCode>CZ</cbc:LocationCode>
+        </cac:StorageLocation>
+      </tnp:Cargo>
+      <tnp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber></cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>NYK FALCON</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>789</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190321</cbc:ArrivalDate>
+          <cbc:LoadingPort>CNSHA</cbc:LoadingPort>
+        </cac:InwardTransport>
+        <cac:OutwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>4</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>3V001</cbc:ConveyanceReferenceNumber>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>4545</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:DepartureDate>20190325</cbc:DepartureDate>
+          <cbc:DischargePort>IDJKT</cbc:DischargePort>
+          <cbc:FinalDestinationCountry>ID</cbc:FinalDestinationCountry>
+        </cac:OutwardTransport>
+      </tnp:Transport>
+      <tnp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>198402847H</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>BAYSWATER SHIPPING &amp; FORWARDING </cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+        <cac:ConsigneeParty>
+          <cac:PartyName>
+            <cbc:Name>RHEINMETALL LANDSYSTEME GMBH C/O</cbc:Name>
+          </cac:PartyName>
+          <cac:Address>
+            <cac:AddressLine>
+              <cbc:Line>223 VIKING DRIVE</cbc:Line>
+            </cac:AddressLine>
+            <cbc:CityName>JAKARTA,JAVA</cbc:CityName>
+            <cbc:PostalZone>10220</cbc:PostalZone>
+            <cbc:CountryCode>ID</cbc:CountryCode>
+          </cac:Address>
+        </cac:ConsigneeParty>
+        <cac:HandlingAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199504953N</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>ANGLO-EASTERN AGENCY (S)</cbc:Name>
+          </cac:PartyName>
+        </cac:HandlingAgentParty>
+      </tnp:Party>
+      <tnp:Item>
+        <cbc:ItemSequenceNumeric>2</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>85042111</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>STEP VOLTAGE REGULATORS</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">58.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>CN</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>2985.00</cbc:ItemCIFFOBValue>
+        </cac:TransactionValue>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+      </tnp:Item>
+      <tnp:Summary>
+        <cbc:NumberOfItems>1</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>1985.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">5</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">0.92</cbc:TotalGrossWeight>
+      </tnp:Summary>
+    </tnp:TranshipmentMovement>
+  </InboundMessage>
+</TradenetDeclaration>

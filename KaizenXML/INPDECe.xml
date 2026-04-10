@@ -1,0 +1,134 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" 
+xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" 
+xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" 
+xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" 
+xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" 
+xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" 
+xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201903042200" instanceIdentifier="K19022800007" 
+xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <inp:InNonPayment>
+      <inp:Header>
+        <cbc:MessageReference>201903010007</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190304</cbc:Date>
+          <cbc:SequenceNumeric>0007</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>INPDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>SFZ</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+		<cac:Remarks>
+		<cbc:FreeText>VENDOR TEST CASE  SET 1</cbc:FreeText>
+		</cac:Remarks>
+      </inp:Header>
+      <inp:Cargo>
+        <cbc:CargoPackingType>5</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>KZ</cbc:LocationCode>
+          <cbc:LocationName>KEPPEL FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>KZ</cbc:LocationCode>
+          <cbc:LocationName>KEPPEL FTZ</cbc:LocationName>
+        </cac:ReceiptLocation> 
+      </inp:Cargo>
+      <inp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>123N</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>SEA VESSEL</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBLSET1INP</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190304</cbc:ArrivalDate>
+          <cbc:LoadingPort>HKHKG</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </inp:Transport>
+      <inp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>200200381C</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>ABES GROUP COMPANY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+      </inp:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>INV125</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190304</cbc:InvoiceDate>
+        <cbc:UnitPriceTermType>CIF</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">899.00</cbc:Amount>
+          <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+      </cac:Invoice>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>42050010</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>BOOT LACES</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">99.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>KR</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>899.00</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">899.00</cbc:Amount>
+            <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+      
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:ItemInvoiceNumber>INV125</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>62.93</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Summary>
+        <cbc:NumberOfItems>1.00</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>899.00</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="PKG">10</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">29</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>62.93</cbc:TotalGoodsAndServicesTaxAmount>
+        </cac:TotalTariff>
+      </inp:Summary>
+    </inp:InNonPayment>
+  </InboundMessage>
+</TradenetDeclaration>

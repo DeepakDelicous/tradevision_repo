@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7F6D9B1-E17D-4F00-87AC-493C2B0C7AC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RET</RootNamespace>
+    <AssemblyName>RET</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseWinFormsOutOfProcDesigner>True</UseWinFormsOutOfProcDesigner>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseWinFormsOutOfProcDesigner>True</UseWinFormsOutOfProcDesigner>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=8.0.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RET">
+      <HintPath>..\..\..\kaizenpublish\tradevision-main\tradevision-main\bin\RET.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Xml, Version=8.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.8.0.2\lib\net462\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="AddUser.aspx" />
+    <Content Include="AdminCreate.aspx" />
+    <Content Include="AdminCreateList.aspx" />
+    <Content Include="Autocomplete.asmx" />
+    <Content Include="Autocompletetest\jquery-1.11.2.js" />
+    <Content Include="Autocompletetest\jquery-ui.js" />
+    <Content Include="AutoComplete\jquery-ui.css" />
+    <Content Include="AutoComplete\jquery-ui.min.js" />
+    <Content Include="AutoComplete\jquery.min.js" />
+    <Content Include="bandmember.jpg" />
+    <Content Include="bgfin.jpg" />
+    <Content Include="bin\RET.dll" />
+    <Content Include="bin\RET.pdb" />
+    <Content Include="Changepassword.aspx" />
+    <Content Include="chicago.jpg" />
+    <Content Include="CO.aspx" />
+    <Content Include="CoList.aspx" />
+    <Content Include="CommonMaster.aspx" />
+    <Content Include="Coview.aspx" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\Loginstyle.css" />
+    <Content Include="css\Themestyle.css" />
+    <Content Include="exchangerate.aspx" />
+    <Content Include="fonts\fontsstyle.css" />
+    <Content Include="GetMac.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\alert-02.svg" />
+    <Content Include="images\arrow-down-01-sharp.svg" />
+    <Content Include="images\bin-gray.svg" />
+    <Content Include="images\bin.svg" />
+    <Content Include="images\blue-pencil.svg" />
+    <Content Include="images\blue-search.svg" />
+    <Content Include="images\calendar.svg" />
+    <Content Include="images\circel-search.svg" />
+    <Content Include="images\copy.svg" />
+    <Content Include="images\delete-sign--v1.png" />
+    <Content Include="images\delivery-box-01.svg" />
+    <Content Include="images\eye-close.svg" />
+    <Content Include="images\eye-open.svg" />
+    <Content Include="images\eye.png" />
+    <Content Include="images\filter-mail-square.svg" />
+    <Content Include="images\filter.svg" />
+    <Content Include="images\import.svg" />
+    <Content Include="images\inbox-unread.svg" />
+    <Content Include="images\info.svg" />
+    <Content Include="images\loading.svg" />
+    <Content Include="images\Logo.svg" />
+    <Content Include="images\logout-03.svg" />
+    <Content Include="images\notification-03-1.svg" />
+    <Content Include="images\notification-03.svg" />
+    <Content Include="images\package-add-1.svg" />
+    <Content Include="images\package-add.svg" />
+    <Content Include="images\package-remove.svg" />
+    <Content Include="images\pencil.svg" />
+    <Content Include="images\permit-box.svg" />
+    <Content Include="images\plus-icon.svg" />
+    <Content Include="images\presentation-bar-chart-01.svg" />
+    <Content Include="images\property-search.svg" />
+    <Content Include="images\red-bin.svg" />
+    <Content Include="images\red-cross.svg" />
+    <Content Include="images\remove-circel.svg" />
+    <Content Include="images\searchBlue.png" />
+    <Content Include="images\shipping-loading.svg" />
+    <Content Include="images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="images\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-icons_228ef1_256x240.png" />
+    <Content Include="images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="images\ui-icons_ffffff_256x240.png" />
+    <Content Include="images\upload_con.svg" />
+    <Content Include="images\user-shield-01.svg" />
+    <Content Include="IMG\decportal.png" />
+    <Content Include="IMG\forportal.png" />
+    <Content Include="IMG\Logbg.jpg" />
+    <Content Include="import_excel.aspx" />
+    <Content Include="InNonPayment.aspx" />
+    <Content Include="InNONpaymentList.aspx" />
+    <Content Include="InNonPaymentView.aspx" />
+    <Content Include="Inpayment.aspx" />
+    <Content Include="InpaymentList.aspx" />
+    <Content Include="InpaymentView.aspx" />
+    <Content Include="javarun.aspx" />
+    <Content Include="js\404.js" />
+    <Content Include="js\chart-js.js" />
+    <Content Include="js\dashboard.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.11.2.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\Script.js" />
+    <Content Include="KaizenXML\COODEC.xml" />
+    <Content Include="KaizenXML\INPDEC.xml" />
+    <Content Include="KaizenXML\INPDECe.xml" />
+    <Content Include="KaizenXML\INPDECKAIZEN000003.xml" />
+    <Content Include="KaizenXML\INPDECKNN000003.xml" />
+    <Content Include="KaizenXML\INPDECKNN000004.xml" />
+    <Content Include="KaizenXML\INPDECKNN000005.xml" />
+    <Content Include="KaizenXML\INPDECKNN000007.xml" />
+    <Content Include="KaizenXML\INPDECKNN00029070.xml" />
+    <Content Include="KaizenXML\INPDECKNN000361700.xml" />
+    <Content Include="KaizenXML\INPDECKNN001001.xml" />
+    <Content Include="KaizenXML\INPDECKNN001003.xml" />
+    <Content Include="KaizenXML\INPDECKNN001004.xml" />
+    <Content Include="KaizenXML\INPDECKNN001005.xml" />
+    <Content Include="KaizenXML\INPDECKNN001006.xml" />
+    <Content Include="KaizenXML\INPDECKNN001007.xml" />
+    <Content Include="KaizenXML\INPDECKNN00127329.xml" />
+    <Content Include="KaizenXML\IPTDEC.xml" />
+    <Content Include="KaizenXML\IPTDECDEMO001001.xml" />
+    <Content Include="KaizenXML\IPTDECKAIZEN001008.xml" />
+    <Content Include="KaizenXML\IPTDECKAIZEN001009.xml" />
+    <Content Include="KaizenXML\IPTDECKNN000001.xml" />
+    <Content Include="KaizenXML\IPTDECKNN000004.xml" />
+    <Content Include="KaizenXML\IPTDECKNN001001.xml" />
+    <Content Include="KaizenXML\IPTDECKNN001003.xml" />
+    <Content Include="KaizenXML\IPTDECKNN001004.xml" />
+    <Content Include="KaizenXML\IPTDECKNN001005.xml" />
+    <Content Include="KaizenXML\IPTDECKNN001023.xml" />
+    <Content Include="KaizenXML\OUTDEC.xml" />
+    <Content Include="KaizenXML\OUTDECKAIZEN001000.xml" />
+    <Content Include="KaizenXML\OUTDECKNN000019.xml" />
+    <Content Include="KaizenXML\test.xml" />
+    <Content Include="KaizenXML\TNPDEC.xml" />
+    <Content Include="KaizenXML\TNPDECKAIZEN001001.xml" />
+    <Content Include="KaizenXML\TradeNet - XML\COODEC.xml" />
+    <Content Include="KaizenXML\TradeNet - XML\INPDECKAIZEN000003.xml" />
+    <Content Include="KaizenXML\TradeNet - XML\IPTDECDEMO001001.xml" />
+    <Content Include="KaizenXML\TradeNet - XML\OUTDECKAIZEN001000.xml" />
+    <Content Include="KaizenXML\TradeNet - XML\TNPDECKAIZEN001001.xml" />
+    <Content Include="la.jpg" />
+    <Content Include="Loader.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login\css\main.css" />
+    <Content Include="Login\css\newLogin.css" />
+    <Content Include="Login\css\plugins.bundle.css" />
+    <Content Include="Login\css\util.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\images\icons\favicon.ico" />
+    <Content Include="Login\images\img-01.png" />
+    <Content Include="Login\js\main.js" />
+    <Content Include="Login\vendor\animate\animate.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Login\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Login\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Login\vendor\bootstrap\js\popper.js" />
+    <Content Include="Login\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Login\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Login\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Login\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Login\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Login\vendor\select2\select2.css" />
+    <Content Include="Login\vendor\select2\select2.js" />
+    <Content Include="Login\vendor\select2\select2.min.css" />
+    <Content Include="Login\vendor\select2\select2.min.js" />
+    <Content Include="Login\vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="OnlineCss\bootstrap-datepicker.js" />
+    <Content Include="OnlineCss\bootstrap.min.4.3.1.js" />
+    <Content Include="OnlineCss\bootstrap.min.css" />
+    <Content Include="OnlineCss\bootstrap.min.js" />
+    <Content Include="OnlineCss\font-awesome.min.css" />
+    <Content Include="OnlineCss\jquery.min.3.4.1.js" />
+    <Content Include="OnlineCss\jquery.min.js" />
+    <Content Include="OnlineCss\popper.min.js" />
+    <Content Include="date.aspx" />
+    <Content Include="GetMacAddress.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="IMG\letter-head-top.jpg" />
+    <Content Include="IMG\search.png" />
+    <Content Include="InpaymentCCP.aspx" />
+    <Content Include="ManageMailbox.aspx" />
+    <Content Include="ManageMailboxList.aspx" />
+    <Content Include="ManageUser.aspx" />
+    <Content Include="ManageUserList.aspx" />
+    <Content Include="Out.aspx" />
+    <Content Include="OutList.aspx" />
+    <Content Include="OutView.aspx" />
+    <Content Include="packages\EPPlus.8.0.2\EPPlusLogo.png" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net35\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net35\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net462\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net462\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net8.0\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net8.0\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net9.0\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\net9.0\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\lib\netstandard2.0\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\netstandard2.0\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\lib\netstandard2.1\EPPlus.dll" />
+    <Content Include="packages\EPPlus.8.0.2\lib\netstandard2.1\EPPlus.xml" />
+    <Content Include="packages\EPPlus.8.0.2\readme.txt" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\EPPlusLogo.png" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\net35\EPPlus.Interfaces.dll" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\net462\EPPlus.Interfaces.dll" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\net8.0\EPPlus.Interfaces.dll" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\net9.0\EPPlus.Interfaces.dll" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\netstandard2.0\EPPlus.Interfaces.dll" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\lib\netstandard2.1\EPPlus.Interfaces.dll" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.xml" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.xml" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.1\Microsoft.IO.RecyclableMemoryStream.dll" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.1\Microsoft.IO.RecyclableMemoryStream.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\net461\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\LICENSE.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\net45\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard1.1\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.dll" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netstandard2.0\System.Buffers.xml" />
+    <Content Include="packages\System.Buffers.4.5.1\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Buffers.4.5.1\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Buffers.4.5.1\version.txt" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\Icon.png" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\netcore50\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard1.4\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard2.0\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard2.1\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard2.1\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\LICENSE.TXT" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\net461\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\net461\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\de\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\es\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\fr\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\it\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\ja\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\ko\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\ru\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\zh-hans\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netcore50\zh-hant\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\de\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\es\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\fr\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\it\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\ja\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\ko\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\ru\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\zh-hans\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.1\zh-hant\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\de\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\es\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\fr\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\it\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\ja\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\ko\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\ru\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\zh-hans\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.3\zh-hant\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\de\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\es\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\fr\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\it\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\ja\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\ko\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\ru\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\zh-hans\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard1.4\zh-hant\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard2.0\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard2.0\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard2.1\System.ComponentModel.Annotations.dll" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\netstandard2.1\System.ComponentModel.Annotations.xml" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\version.txt" />
+    <Content Include="packages\System.Memory.4.5.5\lib\net461\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.5\lib\net461\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.5\lib\netstandard1.1\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.dll" />
+    <Content Include="packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.xml" />
+    <Content Include="packages\System.Memory.4.5.5\LICENSE.TXT" />
+    <Content Include="packages\System.Memory.4.5.5\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Memory.4.5.5\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Memory.4.5.5\version.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\version.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netcoreapp2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\LICENSE.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\net461\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\netstandard1.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\ref\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\version.txt" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\Icon.png" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net462\System.Security.Cryptography.Xml.dll" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net462\System.Security.Cryptography.Xml.xml" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net6.0\System.Security.Cryptography.Xml.dll" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net6.0\System.Security.Cryptography.Xml.xml" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net7.0\System.Security.Cryptography.Xml.dll" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net7.0\System.Security.Cryptography.Xml.xml" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net8.0\System.Security.Cryptography.Xml.dll" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\net8.0\System.Security.Cryptography.Xml.xml" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\netstandard2.0\System.Security.Cryptography.Xml.dll" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\lib\netstandard2.0\System.Security.Cryptography.Xml.xml" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\LICENSE.TXT" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\useSharedDesignerContext.txt" />
+    <Content Include="PDF-Files\barcode.gif" />
+    <Content Include="scripts\chart-js.js" />
+    <Content Include="scripts\dashboard.js" />
+    <Content Include="scripts\navigationScript.js" />
+    <Content Include="scripts\script.js" />
+    <Content Include="SequencePool.aspx" />
+    <Content Include="sessionTimeout.aspx" />
+    <Content Include="css\404.css" />
+    <Content Include="css\simple-sidebar.css" />
+    <Content Include="IMG\edit.png" />
+    <Content Include="css\style.css" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="IMG\1.png" />
+    <Content Include="IMG\2.png" />
+    <Content Include="IMG\3.png" />
+    <Content Include="IMG\4.png" />
+    <Content Include="IMG\Barchart.png" />
+    <Content Include="IMG\geometry2.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="newyork.jpg" />
+    <Content Include="ny.jpg" />
+    <Content Include="paris.jpg" />
+    <Content Include="sanfran.jpg" />
+    <Content Include="Transhipment.aspx" />
+    <Content Include="TranshipmentList.aspx" />
+    <Content Include="TranshipmentView.aspx" />
+    <Content Include="UserReports.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Webhook.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCreate.aspx.cs">
+      <DependentUpon>AdminCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCreate.aspx.designer.cs">
+      <DependentUpon>AdminCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCreateList.aspx.cs">
+      <DependentUpon>AdminCreateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCreateList.aspx.designer.cs">
+      <DependentUpon>AdminCreateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Autocomplete.asmx.cs">
+      <DependentUpon>Autocomplete.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Changepassword.aspx.cs">
+      <DependentUpon>Changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Changepassword.aspx.designer.cs">
+      <DependentUpon>Changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\COClass.cs" />
+    <Compile Include="Classes\InnonPaymentClass.cs" />
+    <Compile Include="Classes\InpaymentClass.cs" />
+    <Compile Include="Classes\OutClass.cs" />
+    <Compile Include="Classes\TranshipmentClass.cs" />
+    <Compile Include="CO.aspx.cs">
+      <DependentUpon>CO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CO.aspx.designer.cs">
+      <DependentUpon>CO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoList.aspx.cs">
+      <DependentUpon>CoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoList.aspx.designer.cs">
+      <DependentUpon>CoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonMaster.aspx.cs">
+      <DependentUpon>CommonMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonMaster.aspx.designer.cs">
+      <DependentUpon>CommonMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coview.aspx.cs">
+      <DependentUpon>Coview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coview.aspx.designer.cs">
+      <DependentUpon>Coview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exchangerate.aspx.cs">
+      <DependentUpon>exchangerate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exchangerate.aspx.designer.cs">
+      <DependentUpon>exchangerate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetImporter.ashx.cs">
+      <DependentUpon>GetImporter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GetMac.aspx.cs">
+      <DependentUpon>GetMac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetMac.aspx.designer.cs">
+      <DependentUpon>GetMac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="import_excel.aspx.cs">
+      <DependentUpon>import_excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="import_excel.aspx.designer.cs">
+      <DependentUpon>import_excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InNonPayment.aspx.cs">
+      <DependentUpon>InNonPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InNonPayment.aspx.designer.cs">
+      <DependentUpon>InNonPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InNONpaymentList.aspx.cs">
+      <DependentUpon>InNONpaymentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InNONpaymentList.aspx.designer.cs">
+      <DependentUpon>InNONpaymentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InNonPaymentView.aspx.cs">
+      <DependentUpon>InNonPaymentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InNonPaymentView.aspx.designer.cs">
+      <DependentUpon>InNonPaymentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inpayment.aspx.cs">
+      <DependentUpon>Inpayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inpayment.aspx.designer.cs">
+      <DependentUpon>Inpayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InpaymentList.aspx.cs">
+      <DependentUpon>InpaymentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InpaymentList.aspx.designer.cs">
+      <DependentUpon>InpaymentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InpaymentView.aspx.cs">
+      <DependentUpon>InpaymentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InpaymentView.aspx.designer.cs">
+      <DependentUpon>InpaymentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javarun.aspx.cs">
+      <DependentUpon>javarun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javarun.aspx.designer.cs">
+      <DependentUpon>javarun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="date.aspx.cs">
+      <DependentUpon>date.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="date.aspx.designer.cs">
+      <DependentUpon>date.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetMacAddress.aspx.cs">
+      <DependentUpon>GetMacAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetMacAddress.aspx.designer.cs">
+      <DependentUpon>GetMacAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InpaymentCCP.aspx.cs">
+      <DependentUpon>InpaymentCCP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InpaymentCCP.aspx.designer.cs">
+      <DependentUpon>InpaymentCCP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMailbox.aspx.cs">
+      <DependentUpon>ManageMailbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageMailbox.aspx.designer.cs">
+      <DependentUpon>ManageMailbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMailboxList.aspx.cs">
+      <DependentUpon>ManageMailboxList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageMailboxList.aspx.designer.cs">
+      <DependentUpon>ManageMailboxList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUserList.aspx.cs">
+      <DependentUpon>ManageUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUserList.aspx.designer.cs">
+      <DependentUpon>ManageUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Out.aspx.cs">
+      <DependentUpon>Out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Out.aspx.designer.cs">
+      <DependentUpon>Out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutList.aspx.cs">
+      <DependentUpon>OutList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutList.aspx.designer.cs">
+      <DependentUpon>OutList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutView.aspx.cs">
+      <DependentUpon>OutView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutView.aspx.designer.cs">
+      <DependentUpon>OutView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SequencePool.aspx.cs">
+      <DependentUpon>SequencePool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SequencePool.aspx.designer.cs">
+      <DependentUpon>SequencePool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sessionTimeout.aspx.cs">
+      <DependentUpon>sessionTimeout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sessionTimeout.aspx.designer.cs">
+      <DependentUpon>sessionTimeout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transhipment.aspx.cs">
+      <DependentUpon>Transhipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transhipment.aspx.designer.cs">
+      <DependentUpon>Transhipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TranshipmentList.aspx.cs">
+      <DependentUpon>TranshipmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TranshipmentList.aspx.designer.cs">
+      <DependentUpon>TranshipmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TranshipmentView.aspx.cs">
+      <DependentUpon>TranshipmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TranshipmentView.aspx.designer.cs">
+      <DependentUpon>TranshipmentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webhook.aspx.cs">
+      <DependentUpon>Webhook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webhook.aspx.designer.cs">
+      <DependentUpon>Webhook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreate.aspx.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserCreate.aspx.designer.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports.aspx.cs">
+      <DependentUpon>UserReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports.aspx.designer.cs">
+      <DependentUpon>UserReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home.Master" />
+    <Content Include="scss\style.scss" />
+    <Content Include="PDF-Files\Doc1.pdf" />
+    <Content Include="AdminMaster.Master" />
+    <Content Include="ExcelTemplate\InPaymentExcel.xlsx" />
+    <Content Include="GetImporter.ashx" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Login\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="ExcelTemplate\~%24InPaymentExcel.xlsx" />
+    <Content Include="KaizenXML\TradeNet - XML.rar" />
+    <Content Include="fonts\Satoshi-Black.woff" />
+    <Content Include="fonts\Satoshi-BlackItalic.woff" />
+    <Content Include="fonts\Satoshi-Bold.woff" />
+    <Content Include="fonts\Satoshi-BoldItalic.woff" />
+    <Content Include="fonts\Satoshi-Italic.woff" />
+    <Content Include="fonts\Satoshi-Light.woff" />
+    <Content Include="fonts\Satoshi-LightItalic.woff" />
+    <Content Include="fonts\Satoshi-Medium.woff" />
+    <Content Include="fonts\Satoshi-MediumItalic.woff" />
+    <Content Include="fonts\Satoshi-Regular.woff" />
+    <Content Include="App_Data\webhook.log" />
+    <Content Include="ExcelTemplate\Item_Upload_Excel_Inpayment.xlsx" />
+    <None Include="packages.config" />
+    <Content Include="packages\EPPlus.8.0.2\.signature.p7s" />
+    <Content Include="packages\EPPlus.8.0.2\EPPlus.8.0.2.nupkg" />
+    <Content Include="packages\EPPlus.8.0.2\license.md" />
+    <Content Include="packages\EPPlus.8.0.2\readme.md" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\.signature.p7s" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\EPPlus.Interfaces.8.0.0.nupkg" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\license.md" />
+    <Content Include="packages\EPPlus.Interfaces.8.0.0\readme.md" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\Microsoft.IO.RecyclableMemoryStream.3.0.1.nupkg" />
+    <Content Include="packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\README.md" />
+    <Content Include="packages\System.Buffers.4.5.1\.signature.p7s" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\lib\uap10.0.16299\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\ref\uap10.0.16299\_._" />
+    <Content Include="packages\System.Buffers.4.5.1\System.Buffers.4.5.1.nupkg" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\.signature.p7s" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\net45\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\portable-net45+win8\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\win8\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\net45\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\portable-net45+win8\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\win8\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.ComponentModel.Annotations.5.0.0\System.ComponentModel.Annotations.5.0.0.nupkg" />
+    <Content Include="packages\System.Memory.4.5.5\.signature.p7s" />
+    <Content Include="packages\System.Memory.4.5.5\lib\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Memory.4.5.5\ref\netcoreapp2.1\_._" />
+    <Content Include="packages\System.Memory.4.5.5\System.Memory.4.5.5.nupkg" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\.signature.p7s" />
+    <Content Include="packages\System.Runtime.CompilerServices.Unsafe.4.5.3\System.Runtime.CompilerServices.Unsafe.4.5.3.nupkg" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\.signature.p7s" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\buildTransitive\net461\System.Security.Cryptography.Xml.targets" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\buildTransitive\net462\_._" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\buildTransitive\net6.0\_._" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\buildTransitive\netcoreapp2.0\System.Security.Cryptography.Xml.targets" />
+    <Content Include="packages\System.Security.Cryptography.Xml.8.0.2\System.Security.Cryptography.Xml.8.0.2.nupkg" />
+    <Content Include="PDF-Files\CCCp.pdf" />
+    <Content Include="PDF-Files\CCP.pdf" />
+    <Content Include="PDF-Files\DP9D105047TCCCp.pdf" />
+    <Content Include="PDF-Files\ID9C106883ECCCp.pdf" />
+    <Content Include="PDF-Files\IG5L503969PCCCp" />
+    <Content Include="PDF-Files\IG5L503971KCCCp" />
+    <Content Include="PDF-Files\IG5L503988GCCCp" />
+    <Content Include="PDF-Files\IG9D437326TCCCp.pdf" />
+    <Content Include="PDF-Files\InpaymentCCP.pdf" />
+    <Content Include="PDF-Files\IR9D378667VCCP.pdf" />
+    <Content Include="PDF-Files\CCCp" />
+    <None Include="Properties\PublishProfiles\RET.pubxml" />
+    <Content Include="UserCreate.aspx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Uploaded Folder\Book1.xlsx" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\config\" />
+    <Folder Include=".vs\RET\" />
+    <Folder Include="obj\" />
+    <Folder Include="OnlineJs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5964</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1094/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,157 @@
+<TradenetDeclaration xmlns:cbc="urn:crimsonlogic:tn:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:crimsonlogic:tn:schema:xsd:CommonAggregateComponents-2" xmlns:inp="urn:crimsonlogic:tn:schema:xsd:InNonPayment" xmlns:ipt="urn:crimsonlogic:tn:schema:xsd:InPayment" xmlns:out="urn:crimsonlogic:tn:schema:xsd:OutwardDeclaration" xmlns:tnp="urn:crimsonlogic:tn:schema:xsd:TranshipmentMovement" xmlns:coo="urn:crimsonlogic:tn:schema:xsd:CertificateOfOrigin" dateTime="201904011907" instanceIdentifier="K19040100005" xmlns="urn:crimsonlogic:tn:schema:xsd:TradenetDeclaration">
+  <cbc:MessageVersion>041</cbc:MessageVersion>
+  <cbc:SenderID>QXMF.QXMF001</cbc:SenderID>
+  <cbc:RecipientID>DCST.DCST401</cbc:RecipientID>
+  <cbc:TotalNumberOfDeclaration>1</cbc:TotalNumberOfDeclaration>
+  <InboundMessage>
+    <inp:InNonPayment>
+      <inp:Header>
+        <cbc:MessageReference>201904010001</cbc:MessageReference>
+        <cac:UniqueReferenceNumber>
+          <cbc:ID>201834618Z</cbc:ID>
+          <cbc:Date>20190401</cbc:Date>
+          <cbc:SequenceNumeric>0001</cbc:SequenceNumeric>
+        </cac:UniqueReferenceNumber>
+        <cbc:DeclarantID>QXMF.QXMF001</cbc:DeclarantID>
+        <cbc:CommonAccessReference>INPDEC</cbc:CommonAccessReference>
+        <cbc:DeclarationType>APS</cbc:DeclarationType>
+        <cbc:DeclarationIndicator>true</cbc:DeclarationIndicator>
+        <cac:Remarks>
+          <cbc:FreeText>INVOICE NUMBER :INVI-256</cbc:FreeText>
+        </cac:Remarks>
+      </inp:Header>
+      <inp:Cargo>
+        <cbc:CargoPackingType>9</cbc:CargoPackingType>
+        <cac:ReleaseLocation>
+          <cbc:LocationCode>PPZ</cbc:LocationCode>
+          <cbc:LocationName>PASIR PANJANG FTZ</cbc:LocationName>
+        </cac:ReleaseLocation>
+        <cac:ReceiptLocation>
+          <cbc:LocationCode>ME</cbc:LocationCode>
+          <cbc:LocationName>MAJOR EXPORTER SCHEME</cbc:LocationName>
+        </cac:ReceiptLocation>
+        <cac:TransportEquipment>
+          <cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+          <cbc:EquipmentID>ABCD1234567</cbc:EquipmentID>
+          <cbc:SizeTypeCode>FCL40</cbc:SizeTypeCode>
+          <cbc:EquipmentWeightMeasureNumeric>2</cbc:EquipmentWeightMeasureNumeric>
+          <cac:TransportEquipmentSeal>
+            <cbc:SealID>OOCL142522</cbc:SealID>
+          </cac:TransportEquipmentSeal>
+        </cac:TransportEquipment>
+      </inp:Cargo>
+      <inp:Transport>
+        <cac:InwardTransport>
+          <cac:TransportMeans>
+            <cac:TransportMode>
+              <cbc:ModeCode>1</cbc:ModeCode>
+              <cbc:ConveyanceReferenceNumber>VOYAE</cbc:ConveyanceReferenceNumber>
+              <cbc:TransportIdentifier>VESSEL</cbc:TransportIdentifier>
+            </cac:TransportMode>
+            <cbc:MAWBOUCROBLNumber>OBL</cbc:MAWBOUCROBLNumber>
+          </cac:TransportMeans>
+          <cbc:ArrivalDate>20190405</cbc:ArrivalDate>
+          <cbc:LoadingPort>USZZZ</cbc:LoadingPort>
+        </cac:InwardTransport>
+      </inp:Transport>
+      <inp:Party>
+        <cac:DeclarantParty>
+          <cac:PersonInformation>
+            <cbc:CodeValue>S9409336H</cbc:CodeValue>
+            <cbc:Name>ESVARAN ESVARAN</cbc:Name>
+          </cac:PersonInformation>
+          <cbc:Telephone>94550043</cbc:Telephone>
+        </cac:DeclarantParty>
+        <cac:DeclaringAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KNN COMP</cbc:Name>
+          </cac:PartyName>
+        </cac:DeclaringAgentParty>
+        <cac:FreightForwarderParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:FreightForwarderParty>
+        <cac:InwardCarrierAgentParty>
+          <cac:PartyIdentification>
+            <cbc:ID>199201306R</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>AB SHIPPING PTE </cbc:Name>
+          </cac:PartyName>
+        </cac:InwardCarrierAgentParty>
+        <cac:ImporterParty>
+          <cac:PartyIdentification>
+            <cbc:ID>201834618Z</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PartyName>
+            <cbc:Name>KAIZEN TRADE TECHNOLOGY PTE LTD</cbc:Name>
+          </cac:PartyName>
+        </cac:ImporterParty>
+      </inp:Party>
+      <cac:Invoice>
+        <cbc:InvoiceNumber>INVI-256</cbc:InvoiceNumber>
+        <cbc:InvoiceDate>20190401</cbc:InvoiceDate>
+        <cbc:UnitPriceTermType>FOB</cbc:UnitPriceTermType>
+        <cac:TotalInvoiceValue>
+          <cbc:Amount currencyID="SGD">23456.00</cbc:Amount>
+          <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+        </cac:TotalInvoiceValue>
+        <cac:FreightCharge>
+          <cbc:Amount currencyID="SGD">233.00</cbc:Amount>
+          <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+        </cac:FreightCharge>
+        <cac:InsuranceCharge>
+          <cbc:Amount currencyID="SGD">236.89</cbc:Amount>
+          <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+          <cbc:ChargePercent>1</cbc:ChargePercent>
+        </cac:InsuranceCharge>
+      </cac:Invoice>
+      <inp:Item>
+        <cbc:ItemSequenceNumeric>1</cbc:ItemSequenceNumeric>
+        <cbc:ItemHarmonizedSystemCode>84713020</cbc:ItemHarmonizedSystemCode>
+        <cbc:GoodsDescription>LAPTOPS NOT MORE THAN 10KG WITH AT LEAST CPU KEYBOARD &amp; A DISPLAY (NMB)</cbc:GoodsDescription>
+        <cac:ItemQuantity>
+          <cbc:HarmonizedSystemQuantity unitCode="NMB">2550.00</cbc:HarmonizedSystemQuantity>
+        </cac:ItemQuantity>
+        <cbc:OriginCountry>ZA</cbc:OriginCountry>
+        <cac:TransactionValue>
+          <cbc:ItemCIFFOBValue>23925.89</cbc:ItemCIFFOBValue>
+          <cac:UnitPriceValue>
+            <cbc:Amount currencyID="SGD">23456.00</cbc:Amount>
+            <cbc:ExchangeRate>1.00</cbc:ExchangeRate>
+          </cac:UnitPriceValue>
+        </cac:TransactionValue>
+        <cac:CASCProduct>
+          <cbc:CASCProductCode>PCDMIS902</cbc:CASCProductCode>
+          <cbc:CASCProductQuantity unitCode="NMB">2550.00</cbc:CASCProductQuantity>
+        </cac:CASCProduct>
+        <cbc:BrandName>UNBRANDED</cbc:BrandName>
+        <cbc:DangerousGoodsIndicator>false</cbc:DangerousGoodsIndicator>
+        <cbc:InHAWBHUCRHBLNumber>HBL</cbc:InHAWBHUCRHBLNumber>
+        <cbc:ItemInvoiceNumber>INVI-256</cbc:ItemInvoiceNumber>
+        <cac:Tariff>
+          <cac:GoodsAndServicesTax>
+            <cbc:GoodsAndServicesTaxPercent>7</cbc:GoodsAndServicesTaxPercent>
+            <cbc:GoodsAndServicesTaxAmount>1674.81</cbc:GoodsAndServicesTaxAmount>
+          </cac:GoodsAndServicesTax>
+        </cac:Tariff>
+      </inp:Item>
+      <inp:Summary>
+        <cbc:NumberOfItems>1</cbc:NumberOfItems>
+        <cbc:TotalCIFFOBValue>23925.89</cbc:TotalCIFFOBValue>
+        <cbc:TotalOuterPack unitCode="UNT">1</cbc:TotalOuterPack>
+        <cbc:TotalGrossWeight unitCode="TNE">2.5</cbc:TotalGrossWeight>
+        <cac:TotalTariff>
+          <cbc:TotalGoodsAndServicesTaxAmount>1674.81</cbc:TotalGoodsAndServicesTaxAmount>
+        </cac:TotalTariff>
+      </inp:Summary>
+    </inp:InNonPayment>
+  </InboundMessage>
+</TradenetDeclaration>
