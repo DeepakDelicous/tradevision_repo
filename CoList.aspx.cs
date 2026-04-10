@@ -5591,7 +5591,7 @@ namespace RET
             }
         }
         //test
-        private void BindInpaymentGrid123() { }
+      
             
         //Inpayment Grid
         private void BindInpaymentGrid()
