@@ -710,7 +710,7 @@
                                                         </div>--%>
 
 
-                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
 
                                                             <!-- Left Column -->
                                                             <div class="space-y-4">
@@ -718,7 +718,7 @@
                                                                 <div class="w-full bg-gray-700 text-center rounded-full py-2 mt-6">
                                                                     <span class="text-white text-sm font-semibold tracking-wide">Declaration Type</span>
                                                                 </div>
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Message Type</label>
 
@@ -773,7 +773,7 @@
 
 
                                                                 <!-- Previous Permit Number -->
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Previous Permit Number</label>
 
@@ -1025,7 +1025,7 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Declarant Code</label>
                                                                         <div class="flex-1 relative mt-1">
@@ -1036,7 +1036,7 @@
                                                                 </div>
 
                                                                 <!-- Declarant Telephone -->
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Declarant Telephone</label>
                                                                         <div class="flex-1 w-full relative mt-1">
@@ -1051,7 +1051,7 @@
                                                                 </div>
 
                                                                 <!-- CR UEI Number -->
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">CR UEI Number</label>
                                                                         <div class="flex-1 w-full relative mt-1">
@@ -1088,7 +1088,7 @@
                                                                 </div>
 
                                                                 <!-- Recipient 2 -->
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
 
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Recipient 2</label>
@@ -1108,7 +1108,7 @@
                                                                 </div>
 
                                                                 <!-- Recipient 3 -->
-                                                                <div class="w-full mt-4">
+                                                                <div class="w-full ">
                                                                     <div class="flex items-center gap-4">
                                                                         <label class="text-gray-500 text-sm font-medium w-[200px]">Recipient 3</label>
                                                                         <div class="flex-1  w-full relative mt-1">
@@ -1513,7 +1513,7 @@
                                                             </div>
                                                             <div class="footer" align="right">
                                                                 <asp:Button ID="btnYes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                             </div>
                                                         </asp:Panel>
 
@@ -1652,7 +1652,7 @@
                                                             </div>
                                                             <div class="footer" align="right">
                                                                 <asp:Button ID="btnYesinnonimp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                <asp:Button ID="btnNoinnonimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                <asp:Button ID="btnNoinnonimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                             </div>
                                                         </asp:Panel>
 
@@ -1795,7 +1795,7 @@
                                                                     </div>
                                                                     <div class="footer" align="right">
                                                                         <asp:Button ID="btnYesinnonexp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                        <asp:Button ID="btnNoinnonexp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                        <asp:Button ID="btnNoinnonexp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                     </div>
                                                                 </asp:Panel>
 
@@ -1939,7 +1939,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnoninw" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnoninw" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnoninw" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -2080,7 +2080,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnonfreight" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnonfreight" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnonfreight" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -2216,7 +2216,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnonout" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnonout" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnonout" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -2274,7 +2274,7 @@
                                                                 </div>
 
                                                                 <div class="md:max-w-[250px] w-full">
-                                                                    <label class="text-gray-500 text-sm font-medium"></label>
+                                                                    <label class="text-gray-500 text-sm font-medium"> Name 1</label>
                                                                     <div class="relative mt-1">
                                                                         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeName1" placeholder="" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
 
@@ -2286,7 +2286,7 @@
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCRUEI" placeholder="CR UEI" runat="server" TabIndex="25" ValidationGroup="PartyClaimant" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCRUEI" placeholder="" runat="server" TabIndex="25" ValidationGroup="PartyClaimant" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
 
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeCRUEI" ID="RegularExpressionValidator68" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
 
@@ -2299,7 +2299,7 @@
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Address </label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress" placeholder="Address" runat="server" ValidationGroup="PartyClaimant" TabIndex="26" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress" placeholder="" runat="server" ValidationGroup="PartyClaimant" TabIndex="26" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
 
                                                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator80" runat="server" ControlToValidate="ConsigneeAddress" Display="None" ErrorMessage="Party --> Consignee Address is Required" ValidationGroup="PartyClaimant"></asp:RequiredFieldValidator>
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeAddress" ID="RegularExpressionValidator3" ValidationExpression="^[\s\S]{0,160}$" runat="server" ErrorMessage="Maximum 160 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
@@ -2308,16 +2308,16 @@
                                                                 </div>
 
                                                                 <div class="md:max-w-[250px] w-full">
-                                                                    <label class="text-gray-500 text-sm font-medium"></label>
+                                                                    <label class="text-gray-500 text-sm font-medium">Address1</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress1" placeholder="ConsigneeAddress1" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress1" placeholder="" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
                                                                     </div>
                                                                 </div>
 
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">City Name</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCity" placeholder="City Name" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCity" placeholder="" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
 
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeCity" ID="RegularExpressionValidator5" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
 
@@ -2327,7 +2327,7 @@
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Country Subdivision Code</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeSub" placeholder="Country Subdivision Code" ValidationGroup="PartyClaimant" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeSub" placeholder="" ValidationGroup="PartyClaimant" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
 
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeSub" ID="RegularExpressionValidator7" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
 
@@ -2341,7 +2341,7 @@
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Country Subdivision</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeSubDivi" placeholder="Country Subdivision" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeSubDivi" placeholder="" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant"></asp:TextBox>
 
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeSubDivi" ID="RegularExpressionValidator91" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
 
@@ -2362,7 +2362,7 @@
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Country Code</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCountry" placeholder="Country Code" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant" Style="background-color: #f1f5f9 !important;"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCountry" placeholder="" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" ValidationGroup="PartyClaimant" Style="background-color: #f1f5f9 !important;"></asp:TextBox>
 
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeSub" ID="RegularExpressionValidator1" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
 
@@ -2506,7 +2506,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnonconsignee" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnonconsignee" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnonconsignee" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -2682,7 +2682,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnonclaimant" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnonclaimant" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnonclaimant" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -2997,7 +2997,7 @@
                                             <ContentTemplate>
                                                 <asp:UpdatePanel ID="upinnoncargo" UpdateMode="Conditional" runat="server">
                                                     <ContentTemplate>
-                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
                                                             <!-- Left Column -->
                                                             <div class="space-y-4">
 
@@ -3102,7 +3102,7 @@
 
                                                                                 <div class="footer" align="right">
                                                                                     <asp:Button ID="btnYesinnonloadingport" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                    <asp:Button ID="btnNoinnonloadingport" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                    <asp:Button ID="btnNoinnonloadingport" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                 </div>
                                                                             </asp:Panel>
 
@@ -4094,7 +4094,7 @@
                                                                         </h2>
                                                                     </div>
 
-                                                                    <label class="text-gray-500 text-sm font-medium mt-4">Start Date</label>
+                                                                    <label class="text-gray-500 text-sm font-medium ">Start Date</label>
                                                                     <div class="relative mt-1">
                                                                         <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtExStartDate" OnTextChanged="txtExStartDate_TextChanged" AutoPostBack="true" runat="server" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <cc1:CalendarExtender ID="CalendarExtender4" PopupButtonID="imgPopup" runat="server" CssClass="cal_Theme1" TargetControlID="txtExStartDate" Enabled="true" Format="dd/MM/yyyy" ClientIDMode="Inherit"></cc1:CalendarExtender>
@@ -4416,7 +4416,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnonsp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNoinnonsp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNoinnonsp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -4600,7 +4600,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYesinnoninvimp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNovinnoninvimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNovinnoninvimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
 
@@ -4626,7 +4626,7 @@
                                                                     </span>
                                                                 </div>
 
-                                                                <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
+                                                                <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
 
                                                                     <div class="md:max-w-[250px] w-full">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Serial Number</label>
@@ -4665,7 +4665,7 @@
 
                                                                 </div>
 
-                                                                <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
+                                                                <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
 
 
                                                                     <div class="md:max-w-[250px] w-full">
@@ -4921,7 +4921,7 @@
                                                         </div>
 
 
-                                                        <div class="flex justify-end gap-4 md:flex-nowrap flex-wrap mt-4">
+                                                        <div class="flex justify-end gap-4 md:flex-nowrap flex-wrap ">
                                                             <asp:Button ID="btnsaveinvoice" CssClass="duration-300 ease-in-out md:max-w-[120px] w-full bg-[#0560FD] bg-opacity-10 border hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-[#0560FD] text-center rounded-md text-sm sa700 pull-right" runat="server" ValidationGroup="Ivoice" OnClick="BtnAddInvoice_Click" Text="Add Invoice" TabIndex="103" />
                                                             <button style="display: none;" class="duration-300 ease-in-out bg-opacity-10 md:max-w-[120px] w-full bg-[#D81616] border hover:bg-transparent text-[#D81616] h-10 flex items-center justify-center text-center rounded-md text-sm sa700">
                                                                 Delete Invoice
@@ -5127,7 +5127,7 @@
                                                         <div id="ItemDiv" runat="server">
 
 
-                                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-2">
+                                                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6  mb-2">
 
                                                                 <div class="space-y-4 ">
                                                                     <div class="flex justify-between gap-2 items-center ">
@@ -5362,7 +5362,7 @@
                                                                         </div>
                                                                         <div class="footer" align="right">
                                                                             <asp:Button ID="btyeshs" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                            <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                            <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                         </div>
                                                                     </asp:Panel>
 
@@ -5483,7 +5483,7 @@
                                                                                     </div>
                                                                                     <div class="footer" align="right">
                                                                                         <asp:Button ID="btnyesco" runat="server" Style="display: none;" Text="Yes" CssClass="yes" />
-                                                                                        <asp:Button ID="btnnoco" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700 " />
+                                                                                        <asp:Button ID="btnnoco" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700 " />
                                                                                     </div>
                                                                                 </ContentTemplate>
                                                                             </asp:UpdatePanel>
@@ -5555,7 +5555,7 @@
                                                                             </span>
 
                                                                         </div>
-                                                                        <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
+                                                                        <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
 
                                                                             <div class=" w-full" id="duti" visible="false" runat="server">
 
@@ -5861,7 +5861,7 @@
                                                             </div>
 
 
-                                                            <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="Vehicle" visible="false" runat="server">
+                                                            <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="Vehicle" visible="false" runat="server">
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <div class="group relative">
                                                                         <label class="text-gray-500 text-sm font-medium">Vehicle Type</label>
@@ -5895,14 +5895,14 @@
 
 
 
-                                                            <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="extrsItemDiv" visible="true" runat="server">
+                                                            <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="extrsItemDiv" visible="true" runat="server">
 
 
                                                                 <div class="md:max-w-[250px] w-full"></div>
                                                                 <div class="md:max-w-[250px] w-full"></div>
                                                             </div>
 
-                                                            <div class="mt-4 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="OptionalCharges" visible="false" runat="server">
+                                                            <div class=" flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2" id="OptionalCharges" visible="false" runat="server">
                                                                 <div class="md:max-w-[250px] w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Optional Charges</label>
                                                                     <div class="relative mt-1 top-[4px] bg-slate-100 rounded-md h-11">
@@ -6155,7 +6155,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <!-- Table -->
-                                                                    <div class="overflow-auto my-shadow whitespace-nowrap border border-gray-100 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg mt-4">
+                                                                    <div class="overflow-auto my-shadow whitespace-nowrap border border-gray-100 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg ">
 
 
 
@@ -7410,7 +7410,7 @@
                                                                         <h2 class="text-lg sa700 leading-[18px] text-gray-800">Upload Item Excel Template
                                                                         </h2>
                                                                     </div>
-                                                                    <div class="flex lg:flex-nowrap flex-wrap gap-4 mt-4 items-start">
+                                                                    <div class="flex lg:flex-nowrap flex-wrap gap-4  items-start">
                                                                         <div class="w-full">
                                                                             <label class="text-gray-500 text-sm font-medium">Download Item Excel Template</label>
                                                                             <a href="ExcelTemplate/Item_Upload_Excel_Inpayment.xlsx" download class="mt-1 w-full h-10 bg-[#0560FD] rounded-md flex items-center justify-center gap-2 cursor-pointer">
@@ -7852,7 +7852,7 @@
 
                                                         </div>
 
-                                                        <hr class="mt-4" />
+                                                        <hr class="" />
                                                         <div class="flex justify-between gap-4 md:flex-nowrap flex-wrap mt-6">
                                                             <asp:Button ID="btnprevitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnprevitem_Click" Text="Previous" TabIndex="174" />
                                                             <div class="flex gap-4 flex-wrap md:flex-nowrap md:max-w-[260px] w-full">
@@ -8502,7 +8502,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="mt-4 flex justify-between items-end gap-4 flex-wrap mb-2">
+                                                        <div class=" flex justify-between items-end gap-4 flex-wrap mb-2">
                                                             <div class="md:max-w-[250px] w-full">
                                                                 <label class="text-gray-500 text-sm font-medium">Number of Invoices</label>
                                                                 <div class="relative mt-1">
@@ -8622,7 +8622,7 @@
 
 
                                                         <!-- Trader's Remarks Row with Buttons and Cross Reference -->
-                                                        <div class="flex flex-wrap md:flex-nowrap items-start gap-4 mt-4 mb-2">
+                                                        <div class="flex flex-wrap md:flex-nowrap items-start gap-4  mb-2">
 
                                                             <!-- Trader's Remarks Label -->
                                                             <div class="flex items-center w-full md:w-1/3">
@@ -8677,7 +8677,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <h2 class="text-lg sa700 leading-[18px] text-gray-800 mt-4">Declaration Summary</h2>
+                                                        <h2 class="text-lg sa700 leading-[18px] text-gray-800 ">Declaration Summary</h2>
 
                                                         <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 mb-2">
                                                             <div>

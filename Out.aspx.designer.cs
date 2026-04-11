@@ -1095,33 +1095,6 @@ namespace RET
         protected global::AjaxControlToolkit.AutoCompleteExtender AutoCompleteExtender22;
 
         /// <summary>
-        /// TxtExpCRUEI control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtExpCRUEI;
-
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-
-        /// <summary>
-        /// RegularExpressionValidator40 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator40;
-
-        /// <summary>
         /// TxtExpName control.
         /// </summary>
         /// <remarks>
@@ -1165,6 +1138,33 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator68;
+
+        /// <summary>
+        /// TxtExpCRUEI control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtExpCRUEI;
+
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+
+        /// <summary>
+        /// RegularExpressionValidator40 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator40;
 
         /// <summary>
         /// TxtEXPAddress control.
@@ -1221,24 +1221,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator98;
 
         /// <summary>
-        /// TxtExpSubDivision control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtExpSubDivision;
-
-        /// <summary>
-        /// RegularExpressionValidator126 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator126;
-
-        /// <summary>
         /// TxtExpSubCode control.
         /// </summary>
         /// <remarks>
@@ -1255,6 +1237,24 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator123;
+
+        /// <summary>
+        /// TxtExpSubDivision control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtExpSubDivision;
+
+        /// <summary>
+        /// RegularExpressionValidator126 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator126;
 
         /// <summary>
         /// TxtExpPostal control.
@@ -2112,6 +2112,42 @@ namespace RET
         protected global::AjaxControlToolkit.AutoCompleteExtender AutoCompleteExtender5;
 
         /// <summary>
+        /// EndUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EndUserName;
+
+        /// <summary>
+        /// RegularExpressionValidator16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator16;
+
+        /// <summary>
+        /// EndUserName1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EndUserName1;
+
+        /// <summary>
+        /// RegularExpressionValidator17 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator17;
+
+        /// <summary>
         /// EndUserCrueo control.
         /// </summary>
         /// <remarks>
@@ -2146,6 +2182,42 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator21;
+
+        /// <summary>
+        /// EndUserAddress1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EndUserAddress1;
+
+        /// <summary>
+        /// RegularExpressionValidator22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator22;
+
+        /// <summary>
+        /// EndUserCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EndUserCity;
+
+        /// <summary>
+        /// RegularExpressionValidator23 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator23;
 
         /// <summary>
         /// EndUserSubCode control.
@@ -2184,42 +2256,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator27;
 
         /// <summary>
-        /// EndUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndUserName;
-
-        /// <summary>
-        /// RegularExpressionValidator16 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator16;
-
-        /// <summary>
-        /// EndUserAddress1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndUserAddress1;
-
-        /// <summary>
-        /// RegularExpressionValidator22 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator22;
-
-        /// <summary>
         /// EndUserPostal control.
         /// </summary>
         /// <remarks>
@@ -2236,42 +2272,6 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator25;
-
-        /// <summary>
-        /// EndUserName1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndUserName1;
-
-        /// <summary>
-        /// RegularExpressionValidator17 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator17;
-
-        /// <summary>
-        /// EndUserCity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EndUserCity;
-
-        /// <summary>
-        /// RegularExpressionValidator23 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator23;
 
         /// <summary>
         /// EndUserCountry control.
@@ -2643,60 +2643,6 @@ namespace RET
         protected global::AjaxControlToolkit.AutoCompleteExtender AutoCompleteExtender9;
 
         /// <summary>
-        /// ManufacturerAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerAddress;
-
-        /// <summary>
-        /// RegularExpressionValidator31 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator31;
-
-        /// <summary>
-        /// ManufacturerAddress1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerAddress1;
-
-        /// <summary>
-        /// RegularExpressionValidator34 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator34;
-
-        /// <summary>
-        /// ManufacturerSubCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerSubCode;
-
-        /// <summary>
-        /// RegularExpressionValidator33 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator33;
-
-        /// <summary>
         /// ManufacturerName control.
         /// </summary>
         /// <remarks>
@@ -2733,6 +2679,60 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator28;
 
         /// <summary>
+        /// ManufacturerCRUEI control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerCRUEI;
+
+        /// <summary>
+        /// RegularExpressionValidator30 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator30;
+
+        /// <summary>
+        /// ManufacturerAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerAddress;
+
+        /// <summary>
+        /// RegularExpressionValidator31 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator31;
+
+        /// <summary>
+        /// ManufacturerAddress1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerAddress1;
+
+        /// <summary>
+        /// RegularExpressionValidator34 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator34;
+
+        /// <summary>
         /// ManufacturerCity control.
         /// </summary>
         /// <remarks>
@@ -2751,22 +2751,22 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator32;
 
         /// <summary>
-        /// ManufacturerPostal control.
+        /// ManufacturerSubCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerPostal;
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerSubCode;
 
         /// <summary>
-        /// RegularExpressionValidator35 control.
+        /// RegularExpressionValidator33 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator35;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator33;
 
         /// <summary>
         /// ManufacturerSubDivi control.
@@ -2787,22 +2787,22 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator137;
 
         /// <summary>
-        /// ManufacturerCRUEI control.
+        /// ManufacturerPostal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerCRUEI;
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerPostal;
 
         /// <summary>
-        /// RegularExpressionValidator30 control.
+        /// RegularExpressionValidator35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator30;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator35;
 
         /// <summary>
         /// ManufacturerCountry control.

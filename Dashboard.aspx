@@ -716,11 +716,12 @@
         <!-- MainPage -->
       </div>
 
+    <div style="display:none;">
         <!-- Existing controls -->
         <asp:FileUpload ID="fuExcel" runat="server" />
         <asp:Button ID="btnUpdate" runat="server" Text="Update Controlled Status" OnClick="btnUpdate_Click" />
         <asp:Label ID="lblMessage" runat="server" ForeColor="Green"></asp:Label>
-        
+        </div>
 
        <style>
       canvas {

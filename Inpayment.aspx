@@ -762,7 +762,7 @@
                                                         </h2>
                                                     </div>--%>
 
-                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
 
                                                         <!-- Left Column -->
                                                         <div class="space-y-4">
@@ -1342,7 +1342,7 @@
                                                         </div>
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="btnYes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                            <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                         </div>
                                                     </asp:Panel>
 
@@ -1482,7 +1482,7 @@
                                                         </div>
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="btnyesimp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                            <asp:Button ID="btnnoimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="btnnoimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                         </div>
                                                     </asp:Panel>
 
@@ -1628,13 +1628,13 @@
 
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="btnyesinw" runat="server" Text="Yes" CssClass="yes" Style="display: none" />
-                                                            <asp:Button ID="btnnoinw" runat="server" Text="close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="btnnoinw" runat="server" Text="close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                         </div>
 
 
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="Button13" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                            <asp:Button ID="Button17" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="Button17" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                         </div>
 
 
@@ -1783,7 +1783,7 @@
                                                         </div>
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="btnyesfreight" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                            <asp:Button ID="btnnofreight" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="btnnofreight" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
 
                                                         </div>
                                                     </asp:Panel>
@@ -1933,7 +1933,7 @@
                                                         </div>
                                                         <div class="footer" align="right">
                                                             <asp:Button ID="btnyescl" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                            <asp:Button ID="btnnocl" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                            <asp:Button ID="btnnocl" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
 
                                                         </div>
                                                     </asp:Panel>
@@ -2129,7 +2129,7 @@
                                             <asp:UpdatePanel ID="upincargo" runat="server" UpdateMode="Conditional">
                                                 <ContentTemplate>
 
-                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
                                                         <!-- Left Column -->
                                                         <div class="space-y-4">
 
@@ -2152,7 +2152,7 @@
 
                                                                         <div class="w-full flex items-center gap-2">
                                                                             <!-- Label and search icon together -->
-                                                                            <div class="flex items-center gap-1 whitespace-nowrap mt-4">
+                                                                            <div class="flex items-center gap-1 whitespace-nowrap ">
                                                                                 <label class="text-gray-500 text-sm font-medium w-[130px]">Loading Port</label>
                                                                                 <asp:ImageButton ID="btnloadport1" runat="server" CssClass="w-5 h-5" ImageUrl="./images/circel-search.svg" />
                                                                             </div>
@@ -2200,7 +2200,7 @@
 
                                                             </div>
 
-                                                            <div class="md:max-w-[500px] w-full mt-4">
+                                                            <div class="md:max-w-[500px] w-full ">
                                                                 <label class="text-gray-500 text-sm font-medium">Arrival Date</label>
                                                                 <div class="relative mt-1">
                                                                     <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" onkeypress="return isNumberKey(event)" ID="TxtArrivalDate1" runat="server" AutoPostBack="true" OnTextChanged="TxtArrivalDate1_TextChanged" TabIndex="52" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
@@ -2433,7 +2433,7 @@
                                                             </div>
 
 
-                                                            <div class="w-[200] flex items-center gap-2 mt-4">
+                                                            <div class="w-[200] flex items-center gap-2 ">
                                                                 <!-- Label and search icon together -->
                                                                 <div class="flex items-center gap-1 whitespace-nowrap mt-5">
                                                                     <label class="text-gray-500 text-sm font-medium w-[130px]">Release Location</label>
@@ -2467,7 +2467,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="w-[200] flex items-center gap-2 mt-4">
+                                                            <div class="w-[200] flex items-center gap-2 ">
                                                                 <div class="flex items-center gap-1 whitespace-nowrap mt-5">
                                                                     <label class="text-gray-500 text-sm font-medium w-[130px]">Receipt Location</label>
                                                                     <asp:ImageButton ID="btnreceiptloc1" runat="server" ImageUrl="./images/circel-search.svg" CssClass="w-5 h-5" />
@@ -2505,7 +2505,7 @@
                                                                 </span>
 
                                                             </div>
-                                                            <div class="flex items-center gap-2 mt-4">
+                                                            <div class="flex items-center gap-2 ">
                                                                 <div class="flex items-center gap-1 whitespace-nowrap">
                                                                     <label for="staticEmail" class="text-gray-500 text-sm font-medium w-[130px]">Blanket Start Date</label>
                                                                 </div>
@@ -2601,7 +2601,7 @@
                                                             </asp:UpdatePanel>
                                                             <div class="footer" align="right">
                                                                 <asp:Button ID="btnyeslp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                <asp:Button ID="btnnolp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                <asp:Button ID="btnnolp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                             </div>
 
                                                         </div>
@@ -2685,7 +2685,7 @@
 
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnyesrelloc" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnnorelloc" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnnorelloc" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
 
 
@@ -2764,9 +2764,9 @@
 
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnyesrecloc" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <%--  <asp:Button ID="Button13" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />--%>
+                                                                    <%--  <asp:Button ID="Button13" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />--%>
 
-                                                                    <asp:Button ID="btnnorecloc" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnnorecloc" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
 
                                                             </div>
@@ -2981,9 +2981,9 @@
                                                         <div class="flex items-center justify-between mb-1">
                                                             <div class="flex items-center gap-1">
                                                                 <label class="text-[17px] sa700 leading-[18px] text-gray-800 mb-0 mt-6 w-[200px]">Supplier/Manufacturer Party</label>
-                                                                <asp:ImageButton ID="btnsupplier1" CssClass="theme_searchIcon  mt-4" runat="server" ImageUrl="images/searchBlue.png" Height="28" Width="28" />
+                                                                <asp:ImageButton ID="btnsupplier1" CssClass="theme_searchIcon  " runat="server" ImageUrl="images/searchBlue.png" Height="28" Width="28" />
 
-                                                                <asp:Button ValidationGroup="supply" BackColor="Transparent" CssClass="plusbtn  plusbtnIcon  mt-4" BorderWidth="0px" ID="suppyadd" runat="server" TabIndex="73" OnClick="suppyadd_Click" Text="+" />
+                                                                <asp:Button ValidationGroup="supply" BackColor="Transparent" CssClass="plusbtn  plusbtnIcon  " BorderWidth="0px" ID="suppyadd" runat="server" TabIndex="73" OnClick="suppyadd_Click" Text="+" />
                                                             </div>
 
                                                             <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
@@ -3030,8 +3030,8 @@
                                                         <div class="flex items-center justify-between mb-1">
                                                             <div class="flex items-center gap-1">
                                                                 <label class="text-[17px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Importer Party</label>
-                                                                <asp:ImageButton ID="btninvimp1" runat="server" ImageUrl="images/searchBlue.png" Height="28" Width="28" CssClass="theme_searchIcon mt-4" Style="display: none;" />
-                                                                <asp:Button ID="BtnImpPartyADD" Visible="false" BackColor="Transparent" BorderWidth="0px" CssClass="plusbtn  plusbtnIcon mt-4" TabIndex="79" runat="server" ValidationGroup="supply1" OnClick="BtnImpPartyADD_Click" Text="+" />
+                                                                <asp:ImageButton ID="btninvimp1" runat="server" ImageUrl="images/searchBlue.png" Height="28" Width="28" CssClass="theme_searchIcon " Style="display: none;" />
+                                                                <asp:Button ID="BtnImpPartyADD" Visible="false" BackColor="Transparent" BorderWidth="0px" CssClass="plusbtn  plusbtnIcon " TabIndex="79" runat="server" ValidationGroup="supply1" OnClick="BtnImpPartyADD_Click" Text="+" />
                                                             </div>
                                                             <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                 <label class="text-gray-500 text-sm font-medium">Code</label>
@@ -3159,7 +3159,7 @@
                                                             </asp:UpdatePanel>
                                                             <div class="footer" align="right">
                                                                 <asp:Button ID="btnyessuplier" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                <asp:Button ID="btnnosuplier" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                <asp:Button ID="btnnosuplier" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                             </div>
 
                                                         </div>
@@ -3243,7 +3243,7 @@
                                                                     </div>
                                                                     <div class="footer" align="right">
                                                                         <asp:Button ID="btnyesinvimp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                        <asp:Button ID="btnnoinvimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                        <asp:Button ID="btnnoinvimp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </ContentTemplate>
                                                                 <%--   <Triggers>
                                                                                                     <asp:PostBackTrigger ControlID="ImportPartyGrid" />
@@ -3698,7 +3698,7 @@
                                                     </div>
 
 
-                                                    <div class="flex justify-end gap-4 md:flex-nowrap flex-wrap mt-4">
+                                                    <div class="flex justify-end gap-4 md:flex-nowrap flex-wrap ">
 
                                                         <asp:Button ID="btnsaveinvoice" CssClass="duration-300 ease-in-out md:max-w-[120px] w-full bg-[#0560FD] bg-opacity-10 border hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-[#0560FD] text-center rounded-md text-sm sa700 PULL-RIGHT" runat="server" ValidationGroup="Ivoice" OnClick="BtnAddInvoice_Click" Text="Add Invoice" TabIndex="103" />
 
@@ -3930,7 +3930,7 @@
                                                             <p id="p1" style="margin-left: -0px;" visible="false" runat="server">HAWB</p>
                                                         </label>
 
-                                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-2">
+                                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6  mb-2">
 
                                                             <!-- Left Column -->
                                                             <div class="space-y-4">
@@ -4262,7 +4262,7 @@
                                                                         </asp:UpdatePanel>
                                                                         <div class="footer" align="right">
                                                                             <asp:Button ID="btnyesco" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                            <asp:Button ID="btnnoco" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                            <asp:Button ID="btnnoco" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
 
                                                                         </div>
 
@@ -4306,7 +4306,7 @@
 
                                                                 <div class="w-full" style="margin-top: 32px;">
                                                                     <div class="group relative flex gap-1">
-                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] mt-4">Brand</label>
+                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] ">Brand</label>
 
 
                                                                         <div class="relative mt-1 w-[300px] ">
@@ -4324,7 +4324,7 @@
 
                                                                 <div class="w-full" style="margin-top: -9px;">
                                                                     <div class="group relative flex gap-1 ">
-                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] mt-4">Model</label>
+                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] ">Model</label>
                                                                         <div class="relative mt-1 w-[300px]">
                                                                             <asp:TextBox onkeyup="toUpperCaseText(this)" placeholder="Type Model" autocomplete="off" ID="TxtModel" MaxLength="35" runat="server" ValidationGroup="Item" TabIndex="115" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" Style="text-transform: uppercase"></asp:TextBox>
 
@@ -4399,7 +4399,7 @@
 
                                                                 <div class="w-full" style="margin-top: ;">
                                                                     <div class="group relative flex gap-1">
-                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] mt-4">
+                                                                        <label class="text-gray-500 text-sm font-medium w-[70px] ">
                                                                             Invoice<br />
                                                                             Quantity</label>
                                                                         <div class="relative mt-1  bg-slate-100 rounded-md h-11 w-[300px] ">
@@ -5126,7 +5126,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- Table -->
-                                                                <div class="overflow-auto my-shadow whitespace-nowrap border border-gray-100 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg mt-4">
+                                                                <div class="overflow-auto my-shadow whitespace-nowrap border border-gray-100 rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg ">
 
 
 
@@ -5379,7 +5379,7 @@
 
                                                                                                         <div class="footer" align="right">
                                                                                                             <asp:Button ID="btnpcYes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                                            <asp:Button ID="btnpcNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                                            <asp:Button ID="btnpcNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                                         </div>
                                                                                                     </asp:Panel>
 
@@ -5607,7 +5607,7 @@
 
                                                                                                             <div class="footer" align="right">
                                                                                                                 <asp:Button ID="btnpc2Yes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                                                <asp:Button ID="btnpc2No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                                                <asp:Button ID="btnpc2No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                                             </div>
                                                                                                         </asp:Panel>
 
@@ -5834,7 +5834,7 @@
 
                                                                                                             <div class="footer" align="right">
                                                                                                                 <asp:Button ID="btnpc3Yes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                                                <asp:Button ID="btnpc3No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                                                <asp:Button ID="btnpc3No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                                             </div>
                                                                                                         </asp:Panel>
 
@@ -6055,7 +6055,7 @@
 
                                                                                                             <div class="footer" align="right">
                                                                                                                 <asp:Button ID="btnpc4Yes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                                                <asp:Button ID="btnpc4No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                                                <asp:Button ID="btnpc4No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                                             </div>
                                                                                                         </asp:Panel>
 
@@ -6276,7 +6276,7 @@
 
                                                                                                             <div class="footer" align="right">
                                                                                                                 <asp:Button ID="btnpc5Yes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                                                                <asp:Button ID="btnpc5No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                                                                <asp:Button ID="btnpc5No" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                                                             </div>
                                                                                                         </asp:Panel>
 
@@ -6552,7 +6552,7 @@
                                                                         </div>
                                                                         <div class="footer" align="right">
                                                                             <asp:Button ID="btyeshs" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                            <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                            <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                         </div>
                                                                     </asp:Panel>
 
@@ -6732,7 +6732,7 @@
                                                                 <h2 class="text-lg sa700 leading-[18px] text-gray-800">Upload Item Excel Template
                                                                 </h2>
                                                             </div>
-                                                            <div class="flex lg:flex-nowrap flex-wrap gap-4 mt-4 items-start">
+                                                            <div class="flex lg:flex-nowrap flex-wrap gap-4  items-start">
                                                                 <div class="w-full">
                                                                     <label class="text-gray-500 text-sm font-medium">Download Item Excel Template</label>
                                                                     <a href="ExcelTemplate/Item_Upload_Excel_Inpayment.xlsx" download class="mt-1 w-full h-10 bg-[#0560FD] rounded-md flex items-center justify-center gap-2 cursor-pointer">
@@ -6978,7 +6978,7 @@
                                                             <%--  <asp:Button ID="btnDelete" runat="server" Text="Delete All" CssClass="duration-300 ease-in-out md:max-w-[130px] w-full bg-[#D81616] bg-opacity-10 border hover:bg-transparent hover:text-[#D81616] h-10 flex items-center justify-center text-[#D81616] text-center rounded-md text-sm sa700" OnClientClick="return ConfirmDelete();" OnClick="btnDelete_Click" />--%>
                                                         </div>
                                                     </div>
-                                                    <hr class="mt-4" />
+                                                    <hr class="" />
                                                     <div class="flex justify-between gap-4 md:flex-nowrap flex-wrap mt-6">
                                                         <asp:Button ID="btnprevitem" CssClass="bg-[#f1f5f9] bg-white border border-[#ffff] duration-300 ease-in-out flex h-10 hover:bg-transparent hover:border-gray-200 items-center justify-center md:max-w-[120px] rounded-md sa700 text-center text-gray-500 text-sm w-full" runat="server" class="btn btn-info btn-lg" OnClick="btnprevitem_Click" Text="Previous" TabIndex="174" />
                                                         <div class="flex gap-4 flex-wrap md:flex-nowrap md:max-w-[260px] w-full">
@@ -7637,7 +7637,7 @@
                                                     </div>
 
 
-                                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-2">
+                                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6  mb-2">
 
                                                         <!-- Left Column -->
                                                         <div class="space-y-4">
@@ -7809,7 +7809,7 @@
                                                     </div>
 
 
-                                                    <div class="mt-4 flex justify-between items-end gap-4 flex-wrap mb-2">
+                                                    <div class=" flex justify-between items-end gap-4 flex-wrap mb-2">
                                                     </div>
 
 
@@ -7821,7 +7821,7 @@
                                                     </div>
 
 
-                                                    <div class="flex flex-wrap md:flex-nowrap gap-6 mt-4 mb-2">
+                                                    <div class="flex flex-wrap md:flex-nowrap gap-6  mb-2">
 
                                                         <!-- Remarks Text -->
                                                         <div class="flex items-center w-full md:w-1/3">
@@ -7856,7 +7856,7 @@
 
                                                     </div>
 
-                                                    <div class="row mt-4">
+                                                    <div class="row ">
                                                         <div class="col-sm-12">
                                                             <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txttrdremrk" ValidationGroup="Summery" runat="server" TextMode="MultiLine" MaxLength="1024" AutoPostBack="true" OnTextChanged="txttrdremrk_TextChanged" TabIndex="197" Height="70" Width="100%" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                             <asp:Label ID="lbltracunt" ForeColor="Navy" runat="server"></asp:Label>
@@ -7902,7 +7902,7 @@
                                                     </div>
 
 
-                                                    <div class="flex flex-wrap md:flex-nowrap gap-6 mt-4 mb-2">
+                                                    <div class="flex flex-wrap md:flex-nowrap gap-6  mb-2">
 
                                                         <!-- Left Column -->
                                                         <div class=" space-y-5 w-[534px]">

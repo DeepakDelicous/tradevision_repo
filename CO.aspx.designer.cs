@@ -2004,6 +2004,24 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator34;
 
         /// <summary>
+        /// ManufacturerCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ManufacturerCity;
+
+        /// <summary>
+        /// RegularExpressionValidator32 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator32;
+
+        /// <summary>
         /// ManufacturerSubCode control.
         /// </summary>
         /// <remarks>
@@ -2020,6 +2038,15 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator33;
+
+        /// <summary>
+        /// Div6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div6;
 
         /// <summary>
         /// ManufacturerSubDivi control.
@@ -2040,15 +2067,6 @@ namespace RET
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator137;
 
         /// <summary>
-        /// Div6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div6;
-
-        /// <summary>
         /// ManufacturerPostal control.
         /// </summary>
         /// <remarks>
@@ -2065,24 +2083,6 @@ namespace RET
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator35;
-
-        /// <summary>
-        /// ManufacturerCity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManufacturerCity;
-
-        /// <summary>
-        /// RegularExpressionValidator32 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator32;
 
         /// <summary>
         /// ManufacturerCountry control.

@@ -544,7 +544,7 @@
 
 
 
-                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
 
                                                             <!-- Left Column -->
 
@@ -919,7 +919,7 @@
                                                         </div>
 
 
-                                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-2">
+                                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6  mb-2">
 
                                                             <!-- Left Column -->
                                                             <div class="space-y-4">
@@ -1262,7 +1262,7 @@
                                                                     <div class="flex-1 min-w-[150px] max-w-[300px]">
                                                                         <label class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" runat="server" type="text" OnTextChanged="TxtDecCompCode_TextChanged" placeholder="Code" AutoPostBack="true" ID="TxtDecCompCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" runat="server" type="text" OnTextChanged="TxtDecCompCode_TextChanged" placeholder="" AutoPostBack="true" ID="TxtDecCompCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender
                                                                                 ID="AutoCompleteExtender5"
                                                                                 runat="server"
@@ -1284,7 +1284,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px]">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompCRUEI" MaxLength="17" placeholder="CRUEI" runat="server" ValidationGroup="party" TabIndex="25" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompCRUEI" MaxLength="17" placeholder="" runat="server" ValidationGroup="party" TabIndex="25" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtDecCompCRUEI" ID="RegularExpressionValidator1" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="party"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1293,7 +1293,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px]">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompName" MaxLength="50" placeholder="Name" runat="server" ValidationGroup="party" TabIndex="26" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompName" MaxLength="50" placeholder="" runat="server" ValidationGroup="party" TabIndex="26" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtDecCompName" ID="RegularExpressionValidator18" ValidationExpression="^[\s\S]{0,50}$" runat="server" ErrorMessage="Maximum 50 characters allowed." ValidationGroup="party"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1302,7 +1302,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px]">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 2</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompName1" MaxLength="50" placeholder="Name1" ValidationGroup="party" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" Enabled="false" autocomplete="off" ID="TxtDecCompName1" MaxLength="50" placeholder="" ValidationGroup="party" runat="server" TabIndex="27" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtDecCompName1" ID="RegularExpressionValidator19" ValidationExpression="^[\s\S]{0,50}$" runat="server" ErrorMessage="Maximum 50 characters allowed." ValidationGroup="party"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1398,15 +1398,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYes" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNo" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
 
                                                         <div>
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Exporter</h2>
@@ -1418,7 +1418,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="TxtExpCode" placeholder="Code" OnTextChanged="TxtExpCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="TxtExpCode" placeholder="" OnTextChanged="TxtExpCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                             <cc1:AutoCompleteExtender ServiceMethod="GetExpcode"
                                                                                 MinimumPrefixLength="1" CompletionInterval="100"
                                                                                 CompletionListCssClass="ac_results"
@@ -1434,7 +1434,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpCRUEI" runat="server" BackColor="#e8f0fe" placeholder="CRUEI" TabIndex="43" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpCRUEI" runat="server" BackColor="#e8f0fe" placeholder="" TabIndex="43" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
 
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator35" runat="server" ControlToValidate="TxtDecCompCRUEI" Display="None" ErrorMessage="Exporter --> Importer CRUEI is Required" ValidationGroup="Validation" />
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtExpCRUEI" ID="RegularExpressionValidator13" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="PartyExp" />
@@ -1445,7 +1445,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpName" runat="server" placeholder="Name" TabIndex="44" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpName" runat="server" placeholder="" TabIndex="44" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator34" runat="server" ControlToValidate="TxtDecCompCRUEI" Display="None" ErrorMessage="Party --> Exporter Name is Required" ValidationGroup="Validation" />
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtExpName" ID="RegularExpressionValidator11" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyExp" />
                                                                         </div>
@@ -1453,9 +1453,9 @@
 
                                                                     <!-- Exp Name1 -->
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
-                                                                        <label class="text-gray-500 text-sm font-medium">Exp Name1</label>
+                                                                        <label class="text-gray-500 text-sm font-medium"> Name1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpName1" runat="server" ValidationGroup="PartyExp" TabIndex="50" placeholder="Name1" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="TxtExpName1" runat="server" ValidationGroup="PartyExp" TabIndex="50" placeholder="" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="TxtExpName1" ID="RegularExpressionValidator3" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyExp" />
                                                                         </div>
                                                                     </div>
@@ -1463,13 +1463,13 @@
                                                             </div>
 
                                                             <!-- Exporter Address -->
-                                                            <div id="expaddress" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
+                                                            <div id="expaddress" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 ">
                                                                 <!-- Address 1 -->
-                                                               
+                                                                <div class="flex-1 min-w-[200px] max-w-[300px] m-1"></div>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address1</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd1" runat="server" placeholder="Address1" TabIndex="46" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd1" runat="server" placeholder="" TabIndex="46" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                     </div>
                                                                 </div>
 
@@ -1477,7 +1477,7 @@
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address2</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd2" runat="server" placeholder="Address2" TabIndex="47" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd2" runat="server" placeholder="" TabIndex="47" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                     </div>
                                                                 </div>
 
@@ -1485,7 +1485,7 @@
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address3</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd3" runat="server" placeholder="Address3" TabIndex="48" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="txtadd3" runat="server" placeholder="" TabIndex="48" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4" />
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1591,15 +1591,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYescoexp" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNocoexp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNocoexp" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
                                                         <!-- Inward Carrier Agent -->
                                                         <div id="partyinw" runat="server" visible="false">
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Inward Carrier Agent</h2>
@@ -1611,7 +1611,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="InwardCode_TextChanged" placeholder="Code" AutoPostBack="true" ID="InwardCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="InwardCode_TextChanged" placeholder="" AutoPostBack="true" ID="InwardCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender
                                                                                 ID="AutoCompleteExtender4"
                                                                                 runat="server"
@@ -1633,7 +1633,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardCRUEI" runat="server" TabIndex="50" PlaceHolder="CRUEI" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardCRUEI" runat="server" TabIndex="50" PlaceHolder="" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="InwardCRUEI" Display="None" ErrorMessage="Party --> Inward Agent CRUEI is Required" ValidationGroup="Validation"></asp:RequiredFieldValidator>
                                                                         </div>
                                                                     </div>
@@ -1642,7 +1642,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardName" runat="server" PlaceHolder="Name" TabIndex="51" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardName" runat="server" PlaceHolder="" TabIndex="51" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="InwardName" Display="None" ErrorMessage="Party --> Inward Agent Name is Required" ValidationGroup="Validation"></asp:RequiredFieldValidator>
                                                                         </div>
                                                                     </div>
@@ -1651,7 +1651,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 2</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardName1" TabIndex="52" runat="server" PlaceHolder="Name1" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="InwardName1" TabIndex="52" runat="server" PlaceHolder="" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1710,15 +1710,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnyesinw" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnnoinw" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnnoinw" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
                                                         <!-- Outward Carrier Agent -->
                                                         <div>
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">OutwardCarrierAgent</h2>
@@ -1730,7 +1730,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="OutwardCode_TextChanged" placeholder="Code" AutoPostBack="true" ID="OutwardCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="OutwardCode_TextChanged" placeholder="" AutoPostBack="true" ID="OutwardCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender
                                                                                 ID="AutoCompleteExtender2"
                                                                                 runat="server"
@@ -1752,7 +1752,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardCRUEI" ValidationGroup="Partyout" PlaceHolder="CRUEI" runat="server" TabIndex="54" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardCRUEI" ValidationGroup="Partyout" PlaceHolder="" runat="server" TabIndex="54" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator33" runat="server" ControlToValidate="InwardCRUEI" Display="None" ErrorMessage="Party --> Outward Agent CRUEI is Required" ValidationGroup="Validation"></asp:RequiredFieldValidator>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="OutwardCRUEI" ID="RegularExpressionValidator16" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="Partyout"></asp:RegularExpressionValidator>
                                                                         </div>
@@ -1762,7 +1762,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardName" ValidationGroup="Partyout" PlaceHolder="Name" runat="server" TabIndex="55" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardName" ValidationGroup="Partyout" PlaceHolder="" runat="server" TabIndex="55" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator32" runat="server" ControlToValidate="OutwardName" Display="None" ErrorMessage="Party --> Outward Agent Name is Required" ValidationGroup="Validation"></asp:RequiredFieldValidator>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="OutwardName" ID="RegularExpressionValidator14" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Partyout"></asp:RegularExpressionValidator>
                                                                         </div>
@@ -1772,7 +1772,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 2</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardName1" ValidationGroup="Partyout" runat="server" PlaceHolder="Name1" TabIndex="56" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="OutwardName1" ValidationGroup="Partyout" runat="server" PlaceHolder="" TabIndex="56" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="OutwardName1" ID="RegularExpressionValidator15" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Partyout"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1832,15 +1832,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYescoout" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNocoout" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNocoout" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
                                                         <!-- Freight Forwarder -->
                                                         <div>
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Freight Forwarder</h2>
@@ -1852,7 +1852,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="FrieghtCode_TextChanged" placeholder="Code" AutoPostBack="true" ID="FrieghtCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" OnTextChanged="FrieghtCode_TextChanged" placeholder="" AutoPostBack="true" ID="FrieghtCode" TabIndex="24" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender
                                                                                 ID="AutoCompleteExtender6"
                                                                                 runat="server"
@@ -1874,7 +1874,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtCRUEI" ValidationGroup="Partyfreight" PlaceHolder="CRUEI" runat="server" TabIndex="58" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtCRUEI" ValidationGroup="Partyfreight" PlaceHolder="" runat="server" TabIndex="58" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="FrieghtCRUEI" ID="RegularExpressionValidator17" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="Partyfreight"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1883,7 +1883,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtName" ValidationGroup="Partyfreight" PlaceHolder="Name" runat="server" TabIndex="60" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtName" ValidationGroup="Partyfreight" PlaceHolder="" runat="server" TabIndex="60" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="FrieghtName" ID="RegularExpressionValidator60" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Partyfreight"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1892,7 +1892,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 2</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtName1" ValidationGroup="Partyfreight" PlaceHolder="Name1" runat="server" TabIndex="61" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="FrieghtName1" ValidationGroup="Partyfreight" PlaceHolder="" runat="server" TabIndex="61" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="FrieghtName1" ID="RegularExpressionValidator61" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Partyfreight"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1952,15 +1952,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYescofreight" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNocofreight" runat="server" Text="No" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNocofreight" runat="server" Text="No" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
                                                         <!-- Consignee -->
                                                         <div>
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Consignee</h2>
@@ -1972,7 +1972,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ConsigneeCode" placeholder="Code" OnTextChanged="ConsigneeCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ConsigneeCode" placeholder="" OnTextChanged="ConsigneeCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender ServiceMethod="GetCosigncode"
                                                                                 MinimumPrefixLength="1"
                                                                                 CompletionInterval="100" CompletionListCssClass="ac_results" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="itemHighlighted" EnableCaching="false" CompletionSetCount="10"
@@ -1986,7 +1986,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCRUEI" ValidationGroup="PartyClaimant" runat="server" PlaceHolder="CRUEI" TabIndex="63" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCRUEI" ValidationGroup="PartyClaimant" runat="server" PlaceHolder="" TabIndex="63" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeCRUEI" ID="RegularExpressionValidator68" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -1994,7 +1994,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" ValidationGroup="PartyClaimant" type="text" ID="ConsigneeName" PlaceHolder="Name" TabIndex="66" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" ValidationGroup="PartyClaimant" type="text" ID="ConsigneeName" PlaceHolder="" TabIndex="66" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <br />
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeName" ID="RegularExpressionValidator20" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                         </div>
@@ -2002,7 +2002,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeName1" ValidationGroup="PartyClaimant" PlaceHolder="Name1" runat="server" TabIndex="69" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeName1" ValidationGroup="PartyClaimant" PlaceHolder="" runat="server" TabIndex="69" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <br />
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeName1" ID="RegularExpressionValidator21" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                         </div>
@@ -2012,21 +2012,22 @@
                                                             </div>
 
                                                             <!-- Additional rows for Consignee -->
-                                                            <div id="Div2" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
+                                                            <div id="Div2" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 ">
                                                                <%-- <div class="flex-1 min-w-[200px] max-w-[300px] m-1"></div>--%>
 
                                                                 <!-- Name -->
+                                                                <div class="flex-1 min-w-[200px] max-w-[300px] m-1"></div>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress" ValidationGroup="PartyClaimant" PlaceHolder="Address" BackColor="#e8f0fe" runat="server" TabIndex="64" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress" ValidationGroup="PartyClaimant" PlaceHolder="" BackColor="#e8f0fe" runat="server" TabIndex="64" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeAddress" ID="RegularExpressionValidator22" ValidationExpression="^[\s\S]{0,160}$" runat="server" ErrorMessage="Maximum 160 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                     </div>
                                                                 </div>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address1</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress1" ValidationGroup="PartyClaimant" runat="server" PlaceHolder="Address1" TabIndex="67" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeAddress1" ValidationGroup="PartyClaimant" runat="server" PlaceHolder="" TabIndex="67" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <br />
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeAddress1" ID="RegularExpressionValidator23" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                     </div>
@@ -2035,7 +2036,7 @@
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">City</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCity" ValidationGroup="PartyClaimant" PlaceHolder="Address2" runat="server" TabIndex="70" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ConsigneeCity" ValidationGroup="PartyClaimant" PlaceHolder="" runat="server" TabIndex="70" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <br />
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ConsigneeCity" ID="RegularExpressionValidator24" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="PartyClaimant"></asp:RegularExpressionValidator>
                                                                     </div>
@@ -2056,7 +2057,7 @@
 
                                                             </div>
 
-                                                            <div id="Div4" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
+                                                            <div id="Div4" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 ">
 
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1" style="display: none;">
                                                                     <label class="text-gray-500 text-sm font-medium">Postal</label>
@@ -2159,15 +2160,15 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYescoconsignee" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNococonsignee" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNococonsignee" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
 
                                                         <!-- Manufacturer -->
                                                         <div>
-                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
-                                                                <div class="flex items-center justify-between mb-1 mt-4">
+                                                            <div class="flex flex-wrap lg:flex-nowrap gap-3 ">
+                                                                <div class="flex items-center justify-between mb-1 ">
                                                                     <!-- Left side heading and buttons -->
                                                                     <div class="flex items-center gap-1">
                                                                         <h2 class="text-[18px] sa700 leading-[18px] text-gray-800 mb-0 mt-5 w-[200px]">Manufacturer</h2>
@@ -2179,7 +2180,7 @@
                                                                     <div class="flex-1 min-w-[100px] max-w-[300px] m-1">
                                                                         <label for="staticEmail" class="text-gray-500 text-sm font-medium">Code</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ManufacturerCode" placeholder="Code" OnTextChanged="ManufacturerCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ManufacturerCode" placeholder="" OnTextChanged="ManufacturerCode_TextChanged" AutoPostBack="true" TabIndex="47" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <cc1:AutoCompleteExtender ServiceMethod="GetManufactcode"
                                                                                 MinimumPrefixLength="1"
                                                                                 CompletionInterval="100" CompletionListCssClass="ac_results" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="itemHighlighted" EnableCaching="false" CompletionSetCount="10"
@@ -2193,7 +2194,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ManufacturerName" PlaceHolder="Name" TabIndex="74" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" runat="server" type="text" ID="ManufacturerName" PlaceHolder="" TabIndex="74" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerName" ID="RegularExpressionValidator4" ValidationExpression="^[\s\S]{0,50}$" runat="server" ErrorMessage="Maximum 50 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -2202,7 +2203,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">Name 1</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerName1" runat="server" PlaceHolder="Name1" TabIndex="75" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerName1" runat="server" PlaceHolder="" TabIndex="75" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerName1" ID="RegularExpressionValidator28" ValidationExpression="^[\s\S]{0,50}$" runat="server" ErrorMessage="Maximum 50 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -2211,7 +2212,7 @@
                                                                     <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                         <label class="text-gray-500 text-sm font-medium">CR UEI</label>
                                                                         <div class="relative mt-1">
-                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerCRUEI" runat="server" PlaceHolder="CRUEI" TabIndex="73" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                            <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerCRUEI" runat="server" PlaceHolder="" TabIndex="73" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                             <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerCRUEI" ID="RegularExpressionValidator2" ValidationExpression="^[\s\S]{0,17}$" runat="server" ErrorMessage="Maximum 17 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                         </div>
                                                                     </div>
@@ -2219,22 +2220,30 @@
                                                             </div>
 
                                                             <!-- Additional rows for Manufacturer -->
-                                                            <div id="Div5" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
+                                                            <div id="Div5" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 ">
                                                                 <%--<div class="flex-1 min-w-[200px] max-w-[300px] m-1"></div>--%>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerAddress" PlaceHolder="Address" runat="server" TabIndex="76" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerAddress" PlaceHolder="" runat="server" TabIndex="76" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerAddress" ID="RegularExpressionValidator31" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                     </div>
                                                                 </div>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Address 1</label>
                                                                     <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerAddress1" runat="server" PlaceHolder="Address1" TabIndex="77" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerAddress1" runat="server" PlaceHolder="" TabIndex="77" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerAddress1" ID="RegularExpressionValidator34" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                     </div>
                                                                 </div>
+
+                                                                  <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
+      <label class="text-gray-500 text-sm font-medium">City Name</label>
+      <div class="relative mt-1">
+          <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerCity" runat="server" Placeholder="City" TabIndex="78" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+          <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerCity" ID="RegularExpressionValidator32" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
+      </div>
+  </div>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Country Subdivision Code</label>
                                                                     <div class="relative mt-1">
@@ -2242,16 +2251,18 @@
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerSubCode" ID="RegularExpressionValidator33" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
-                                                                    <label class="text-gray-500 text-sm font-medium">Subdivision</label>
-                                                                    <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerSubDivi" Style="text-transform: uppercase" ValidationGroup="Manufacture" placeholder="Sub Division" runat="server" TabIndex="80" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
-                                                                        <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerSubDivi" ID="RegularExpressionValidator137" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
-                                                                    </div>
-                                                                </div>
+                                                              
                                                             </div>
 
-                                                            <div id="Div6" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 mt-4">
+                                                            <div id="Div6" runat="server" class="flex flex-wrap lg:flex-nowrap gap-3 ">
+
+                                                                  <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
+      <label class="text-gray-500 text-sm font-medium">Country Subdivision</label>
+      <div class="relative mt-1">
+          <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerSubDivi" Style="text-transform: uppercase" ValidationGroup="Manufacture" placeholder="Sub Division" runat="server" TabIndex="80" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
+          <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerSubDivi" ID="RegularExpressionValidator137" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
+      </div>
+  </div>
                                                                 <%--<div class="flex-1 min-w-[200px] max-w-[300px] m-1"></div>--%>
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Postal Code</label>
@@ -2260,13 +2271,7 @@
                                                                         <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerPostal" ID="RegularExpressionValidator35" ValidationExpression="^[\s\S]{0,9}$" runat="server" ErrorMessage="Maximum 9 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
-                                                                    <label class="text-gray-500 text-sm font-medium">City Name</label>
-                                                                    <div class="relative mt-1">
-                                                                        <asp:TextBox onkeyup="toUpperCaseText(this)" autocomplete="off" ID="ManufacturerCity" runat="server" Placeholder="City" TabIndex="78" type="text" CssClass="w-full h-10 bg-slate-100 rounded-md flex items-center text-slate-950 text-sm font-medium outline-none border-none px-4"></asp:TextBox>
-                                                                        <asp:RegularExpressionValidator Display="Dynamic" BackColor="yellow" ControlToValidate="ManufacturerCity" ID="RegularExpressionValidator32" ValidationExpression="^[\s\S]{0,35}$" runat="server" ErrorMessage="Maximum 35 characters allowed." ValidationGroup="Manufacture"></asp:RegularExpressionValidator>
-                                                                    </div>
-                                                                </div>
+                                                              
                                                                 <div class="flex-1 min-w-[200px] max-w-[300px] m-1">
                                                                     <label class="text-gray-500 text-sm font-medium">Country Code</label>
                                                                     <div class="relative mt-1">
@@ -2366,7 +2371,7 @@
                                                                 </div>
                                                                 <div class="footer" align="right">
                                                                     <asp:Button ID="btnYescomanufacturer" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                    <asp:Button ID="btnNocomanufacturer" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                    <asp:Button ID="btnNocomanufacturer" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                 </div>
                                                             </asp:Panel>
                                                         </div>
@@ -2404,7 +2409,7 @@
                                                     <ContentTemplate>
 
 
-                                                        <div id="InwardDetailsdiv1" runat="server" class="mt-4" visible="false">
+                                                        <div id="InwardDetailsdiv1" runat="server" class="" visible="false">
 
 
                                                             <div class="mt-2 flex justify-between items-end gap-4 lg:flex-nowrap flex-wrap mb-2">
@@ -2588,7 +2593,7 @@
                                                         <div id="outtr" runat="server">
 
 
-                                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
                                                                 <div class="space-y-4">
                                                                     <!-- Header -->
                                                                     <div class="bg-gray-700 text-center rounded-full py-2 mt-7 w-[566px]">
@@ -2679,7 +2684,7 @@
                                                                         </div>
                                                                         <div class="footer" align="right">
                                                                             <asp:Button ID="btnYescodischargeport" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                            <asp:Button ID="btnNocodischargeport" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                            <asp:Button ID="btnNocodischargeport" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                         </div>
                                                                     </asp:Panel>
                                                                 </div>
@@ -3409,7 +3414,7 @@
                                                             </div>
 
 
-                                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 mb-2">
+                                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6  mb-2">
 
                                                                 <!-- Left Column -->
                                                                 <div class="space-y-4">
@@ -3624,7 +3629,7 @@
               </div>
               <div class="footer" align="right">
                   <asp:Button ID="btyeshs" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                  <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                  <asp:Button ID="btnnohs" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
               </div>
           </asp:Panel>
 
@@ -3690,7 +3695,7 @@
                                                                         </div>
                                                                         <div class="footer" align="right">
                                                                             <asp:Button ID="btnYescoorgin" runat="server" Text="Yes" CssClass="yes" Style="display: none;" />
-                                                                            <asp:Button ID="btnNocoorgin" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px] mt-4 w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
+                                                                            <asp:Button ID="btnNocoorgin" runat="server" Text="Close" CssClass="duration-300 ease-in-out md:max-w-[80px]  w-full bg-[#0560FD] border border-[#0560FD] hover:bg-transparent hover:text-[#0560FD] h-10 flex items-center justify-center text-white text-center rounded-md text-sm sa700" />
                                                                         </div>
                                                                     </asp:Panel>
                                                                 </div>
@@ -4891,7 +4896,7 @@
                                                         </div>
 
 
-                                                        <div class="flex flex-wrap md:flex-nowrap gap-6 mt-4 mb-2">
+                                                        <div class="flex flex-wrap md:flex-nowrap gap-6  mb-2">
 
 
 
