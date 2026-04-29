@@ -22,6 +22,7 @@
             }
         }
 
+
         function CheckOne(obj) {
             var grid = obj.parentNode.parentNode.parentNode;
             var inputs = grid.getElementsByTagName("input");
