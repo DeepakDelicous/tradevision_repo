@@ -36,6 +36,10 @@ namespace RET
         //    bytes = CompressedViewStatePage.Compress(bytes);
         //    ClientScript.RegisterHiddenField("__VSTATE", Convert.ToBase64String(bytes));
         //}
+
+
+
+
         MyClass obj = new MyClass();
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Mycon"].ConnectionString);
         string sqlconn = ConfigurationManager.ConnectionStrings["Mycon"].ConnectionString;
